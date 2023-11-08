@@ -1,0 +1,36 @@
+{
+  "name": "@btakita/brookebrodack-site",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "./bin/dev.sh",
+    "start": "./bin/dev.sh",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "assets--download": "./bin/assets--download.sh",
+    "assets--download--sync": "./bin/assets--download--sync.sh",
+    "assets--upload": "./bin/assets--upload.sh",
+    "assets--upload--sync": "./bin/assets--upload--sync.sh",
+    "clean": "rm -rf ./node_modules/.vite"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^1.1.3",
+    "@astrojs/sitemap": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.2",
+    "@btakita/domain--all--blog": "workspace:*",
+    "@btakita/domain--browser--brookebrodack": "workspace:*",
+    "@btakita/domain--server--blog": "workspace:*",
+    "@ctx-core/dom": "^15.0.3",
+    "@tailwindcss/typography": "^0.5.10",
+    "astro": "^3.4.3",
+    "motion": "^10.16.4",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
