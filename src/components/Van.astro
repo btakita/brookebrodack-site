@@ -1,0 +1,9 @@
+---
+import type { PlateElement } from 'van-type-delegate'
+export interface Props {
+	dom:PlateElement
+}
+const { dom } = Astro.props
+---
+
+<Fragment set:html={dom.render()}/>
