@@ -1,0 +1,23 @@
+---
+import { V_page_brookers } from '@btakita/ui--server--brookebrodack/src'
+import { H_ } from '@ctx-core/vanjs'
+import Van from '../../components/Van.astro'
+import { server__ctx__new } from '../../lib'
+import Layout from '../../layouts/Layout.astro'
+let ctx = server__ctx__new(Astro)
+let H = H_(ctx)
+---
+<Layout>
+	<Van dom={
+		V_page_brookers({ ctx })
+	}/>
+</Layout>
+
+<script>
+	import { browser__ctx__ensure } from '@btakita/domain--browser--brookebrodack'
+	import { V_page_brookers__onbind } from '@btakita/ui--all--brookebrodack'
+	import { V_page_brookers__onbind__init } from '@btakita/ui--browser--brookebrodack'
+	import { dom__onbind__register } from '@ctx-core/dom'
+	V_page_brookers__onbind__init()
+	dom__onbind__register(browser__ctx__ensure(), V_page_brookers__onbind)
+</script>

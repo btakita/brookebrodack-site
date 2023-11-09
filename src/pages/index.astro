@@ -4,17 +4,16 @@ import Layout from '../layouts/Layout.astro'
 let ctx = server__ctx__new(Astro)
 ---
 <Layout>
-	<div class="V_page_home min-h-screen flex flex-col items-center justify-center">
-		<h1>Hello, my name is Brooke Brodack</h1>
-		<h2>& I am an artist</h2>
-		<div class="img_a relative h-96 w-full">
-			<img class="cooler-in-space absolute top-0 m-auto" src="/assets/images/cooler-in-space.gif">
-			<img class="rock-paper-shoot absolute top-0 m-auto" src="/assets/images/rock-paper-shoot.jpg">
-		</div>
+	<div class="V_page_home">
+		<h1>Brooke Brodack</h1>
 	</div>
+	<ul>
+		<li class="text-center mt-12">
+			<a href="/brookers" class="inline text-center">Brookers&hellip;</a>
+		</li>
+	</ul>
 </Layout>
 
 <script>
-	import { V_page_home__onload } from '@btakita/domain--browser--brookebrodack'
-	V_page_home__onload(document.querySelector('.V_page_home'))
+
 </script>
