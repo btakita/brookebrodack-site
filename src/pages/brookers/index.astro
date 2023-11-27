@@ -1,14 +1,12 @@
 ---
 import { V_page_brookers } from '@btakita/ui--server--brookebrodack'
-import { H_ } from '@ctx-core/vanjs'
-import Van from '../../components/Van.astro'
-import { server__ctx__new } from '../../lib'
+import Rel from '../../components/Rel.astro'
+import { server__ctx__new } from '../../lib/index.js'
 import Layout from '../../layouts/Layout.astro'
 let ctx = server__ctx__new(Astro)
-let H = H_(ctx)
 ---
 <Layout>
-	<Van dom={
+	<Rel dom={
 		V_page_brookers({ ctx })
 	}/>
 </Layout>

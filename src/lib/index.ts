@@ -1,2 +1,2 @@
-export * from './mdx__ctx.ts'
-export * from './server__ctx.ts'
+export * from './mdx__ctx.js'
+export * from './server__ctx.js'
