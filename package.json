@@ -23,11 +23,11 @@
     "@btakita/domain--server--blog": "workspace:*",
     "@btakita/ui--all--brookebrodack": "workspace:*",
     "@btakita/ui--browser--brookebrodack": "workspace:*",
-    "@ctx-core/dom": "^15.1.32",
+    "@ctx-core/dom": "^15.1.33",
     "@tailwindcss/typography": "^0.5.10",
-    "astro": "^3.6.2",
+    "astro": "^3.6.3",
     "motion": "^10.16.4",
-    "relementjs": "^0.15.0",
+    "relementjs": "^0.15.2",
     "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
