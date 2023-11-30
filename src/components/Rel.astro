@@ -1,9 +1,0 @@
----
-import type { tag__dom_T } from 'relementjs'
-export interface Props {
-	dom:tag__dom_T<'server'>
-}
-const { dom } = Astro.props
----
-
-<Fragment set:html={dom.render()}/>
