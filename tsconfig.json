@@ -1,17 +1,17 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "baseUrl": "src",
-    "strictNullChecks": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "paths": {
-      "@config": ["config.ts"],
-      "@components/*": ["components/*"],
-      "@content/*": ["content/*"],
-      "@lib/*": ["lib/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"]
-    }
-  }
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"baseUrl": "src",
+		"strictNullChecks": true,
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"paths": {
+			"@config": ["config.ts"],
+			"@components/*": ["components/*"],
+			"@content/*": ["content/*"],
+			"@lib/*": ["lib/*"],
+			"@layouts/*": ["layouts/*"],
+			"@pages/*": ["pages/*"]
+		}
+	}
 }
