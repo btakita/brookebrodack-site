@@ -55,11 +55,13 @@ const social_image_url = new URL(
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap"
-			rel="stylesheet">		<meta name="theme-color" content=""/>
+			rel="stylesheet">
+		<meta name="theme-color" content=""/>
 		{
 			// If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
       // include google-site-verification tag in the heading
       // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
+
 			google_site_verification && (
 				<meta
 					name="google-site-verification"
@@ -79,7 +81,9 @@ const social_image_url = new URL(
 						: 'light')
 		</script>
 		<script>
-			window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+			window.va = window.va || function() {
+				(window.vaq = window.vaq || []).push(arguments)
+			}
 		</script>
 		<script defer src="/_vercel/insights/script.js"></script>
 	</head>
