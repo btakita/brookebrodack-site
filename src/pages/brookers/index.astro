@@ -1,14 +1,12 @@
 ---
 import { brookers__page_c_ } from '@btakita/ui--server--brookebrodack'
-import Rel from 'relementjs/astro'
+import R from 'relementjs/astro'
 import { server__ctx__new } from '../../lib/index.js'
 import Layout from '../../layouts/Layout.astro'
 let ctx = server__ctx__new(Astro)
 ---
 <Layout>
-	<Rel dom={
-		brookers__page_c_({ ctx })
-	}/>
+	<R $={brookers__page_c_({ ctx })}/>
 </Layout>
 
 <script>
