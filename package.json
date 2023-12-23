@@ -3,15 +3,10 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun ./src2/build.ts",
+    "build": "bun src/build.ts",
     "clear": "rm -rf ./dist",
-    "dev": "bun --watch ./src2/index.ts",
+    "dev": "bun --watch src/index.ts",
     "start": "bun ./start.ts",
-    "astro": "astro",
-    "astro:dev": "./bin/dev.sh",
-    "astro:start": "./bin/dev.sh",
-    "astro:build": "astro build",
-    "astro:preview": "astro preview",
     "assets--download": "./bin/assets--download.sh",
     "assets--download--sync": "./bin/assets--download--sync.sh",
     "assets--upload": "./bin/assets--upload.sh",
@@ -19,9 +14,6 @@
     "clean": "rm -rf ./node_modules/.vite"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.2",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.4",
     "@btakita/domain--any--blog": "workspace:*",
     "@btakita/domain--browser--brookebrodack": "workspace:*",
     "@btakita/domain--server--blog": "workspace:*",
@@ -30,11 +22,11 @@
     "@ctx-core/dom": "^15.1.68",
     "@ctx-core/nodejs": "^0.3.1",
     "@tailwindcss/typography": "^0.5.10",
-    "astro": "^4.0.7",
     "elysia": "^0.7.30",
+    "esbuild-style-plugin": "^1.6.3",
     "motion": "^10.16.4",
-    "relementjs": "^0.31.11",
-    "relysjs": "^0.24.3",
+    "relementjs": "^0.33.0",
+    "relysjs": "^0.25.10",
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {

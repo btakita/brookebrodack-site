@@ -55,7 +55,8 @@ module.exports = {
 				highlight: withOpacity('--color-accent'),
 			},
 			boxShadow: {
-				highlight: `0 0 10px ${withOpacity('--color-accent')}`
+				// highlight: `0 0 10px ${withOpacity('--color-accent')}`
+				highlight: withOpacity('--color-accent')
 			}
 		},
 	},
