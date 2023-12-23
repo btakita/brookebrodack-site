@@ -30,12 +30,8 @@ export default async function app__start() {
 					: {}
 			))
 			.use(compression_middleware_())
-			.onError(({ error })=>{
-				console.error(error)
-				return {
-					status: 500,
-					message: 'Internal Error'
-				}
+			.onError(({ error, request })=>{
+				console.error(request.url, error)
 			})
 	)
 }
