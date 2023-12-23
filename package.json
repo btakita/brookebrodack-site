@@ -7,10 +7,6 @@
     "clear": "rm -rf ./dist",
     "dev": "bun --watch src/index.ts",
     "start": "bun ./start.ts",
-    "assets--download": "./bin/assets--download.sh",
-    "assets--download--sync": "./bin/assets--download--sync.sh",
-    "assets--upload": "./bin/assets--upload.sh",
-    "assets--upload--sync": "./bin/assets--upload--sync.sh",
     "clean": "rm -rf ./node_modules/.vite"
   },
   "dependencies": {
