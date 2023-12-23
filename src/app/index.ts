@@ -1,4 +1,4 @@
-import { import_meta_env_ } from '@ctx-core/env'
+import { import_meta_env_ } from 'ctx-core/env'
 import { Elysia } from 'elysia'
 import { dirname, join, resolve } from 'path'
 import { relement__use } from 'relementjs'
@@ -17,7 +17,7 @@ import {
 } from 'relysjs'
 export default async function app__start() {
 	config__init()
-	await metafile__wait()
+	await metafile__wait(2000)
 	return _app__start(
 		new Elysia()
 			.use(await static_middleware_(
@@ -30,6 +30,13 @@ export default async function app__start() {
 					: {}
 			))
 			.use(compression_middleware_())
+			.onError(({ error })=>{
+				console.error(error)
+				return {
+					status: 500,
+					message: 'Internal Error'
+				}
+			})
 	)
 }
 export function config__init() {
@@ -37,6 +44,6 @@ export function config__init() {
 	port__set(app_ctx, port)
 	cwd__set(app_ctx, resolve(join(dirname(new URL(import.meta.url).pathname), '../..')))
 	// TODO: remove when switching to 'src'
-	src_path__set(app_ctx, join(cwd_(app_ctx), 'src2'))
+	src_path__set(app_ctx, join(cwd_(app_ctx), 'src'))
 	relement__use(server__relement)
 }
