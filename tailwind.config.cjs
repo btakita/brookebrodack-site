@@ -1,3 +1,4 @@
+const xs_px = 360
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['../../*/*/src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -5,6 +6,7 @@ module.exports = {
 		// Remove the following screen breakpoint or add other breakpoints
 		// if one breakpoint is not enough for you
 		screens: {
+			xs: `${xs_px}px`,
 			sm: '640px',
 		},
 		// Uncomment the following extend
@@ -51,13 +53,13 @@ module.exports = {
 			mono: ['JetBrains Mono', 'monospace'],
 		},
 		extend: {
-			colors: {
-				highlight: withOpacity('--color-accent'),
-			},
 			boxShadow: {
 				// highlight: `0 0 10px ${withOpacity('--color-accent')}`
 				highlight: withOpacity('--color-accent')
-			}
+			},
+			colors: {
+				highlight: withOpacity('--color-accent'),
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
