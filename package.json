@@ -20,7 +20,6 @@
     "@tailwindcss/typography": "^0.5.10",
     "elysia": "^0.8.3",
     "esbuild-style-plugin": "^1.6.3",
-    "esmcss": "^0.1.2",
     "motion": "^10.16.4",
     "relementjs": "^0.34.0",
     "relysjs": "^0.27.2",
