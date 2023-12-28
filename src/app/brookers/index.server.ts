@@ -1,4 +1,4 @@
-import './index.css'
+import '../index.css'
 import { brookers__page_ } from '@btakita/ui--server--brookebrodack'
 import { type DecoratorBase, Elysia } from 'elysia'
 import type { elysia_context_T } from 'relysjs'
