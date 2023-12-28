@@ -25,17 +25,24 @@ export async function build(config?:relysjs__build_config_T) {
 			{
 				name: 'postcss',
 				setup(build) {
-					const processed__cssBundle_S = new Set()
+					const cssBundle_M_output__relative_path = new Map<string, string[]>()
 					build.onEnd(async result=>{
 						const { metafile } = result
 						const outputs = metafile?.outputs ?? {}
 						for (const output__relative_path in outputs) {
 							const { cssBundle } = outputs[output__relative_path]
-							if (!cssBundle || processed__cssBundle_S.has(cssBundle)) continue
-							processed__cssBundle_S.add(cssBundle)
+							if (!cssBundle) continue
+							cssBundle_M_output__relative_path.set(
+								cssBundle,
+								[
+									...(cssBundle_M_output__relative_path.get(cssBundle) ?? []),
+									output__relative_path
+								])
+						}
+						for (const [cssBundle, output__relative_path_a] of cssBundle_M_output__relative_path.entries()) {
 							const result = await postcss([
 								tailwind({
-									content: [output__relative_path]
+									content: output__relative_path_a
 								}),
 							]).process(
 								await readFile(cssBundle),
