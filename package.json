@@ -16,18 +16,19 @@
     "@btakita/ui--any--brookebrodack": "workspace:*",
     "@btakita/ui--browser--brookebrodack": "workspace:*",
     "@btakita/ui--server--brookebrodack": "workspace:*",
-    "@ctx-core/dom": "^15.2.0",
+    "@ctx-core/dom": "^15.2.4",
     "@ctx-core/nodejs": "^0.3.1",
-    "elysia": "^0.8.5",
-    "esbuild-style-plugin": "^1.6.3",
+    "elysia": "^0.8.6",
     "motion": "^10.16.4",
-    "postcss": "^8.4.32",
-    "relementjs": "^0.35.0",
-    "relysjs": "^0.29.1",
-    "tailwindcss": "^3.4.0"
+    "relementjs": "^0.38.1",
+    "relysjs": "^0.33.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "cssnano": "^6.0.2",
+    "esbuild-style-plugin": "^1.6.3",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
   },
   "peerDependencies": {
     "typescript": "^5.3.3"
