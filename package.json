@@ -16,15 +16,15 @@
     "@btakita/ui--any--brookebrodack": "workspace:*",
     "@btakita/ui--browser--brookebrodack": "workspace:*",
     "@btakita/ui--server--brookebrodack": "workspace:*",
-    "@ctx-core/dom": "^15.2.12",
-    "ctx-core": "^5.16.1",
-    "elysia": "^0.8.8",
+    "@ctx-core/dom": "^15.2.13",
+    "ctx-core": "^5.16.2",
+    "elysia": "^0.8.9",
     "motion": "^10.17.0",
-    "relementjs": "^0.45.0",
-    "relysjs": "^0.41.5"
+    "relementjs": "^0.45.1",
+    "relysjs": "^0.41.8"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.1.17",
+    "@rebuildjs/tailwindcss": "^0.1.18",
     "bun-types": "latest",
     "cssnano": "^6.0.3",
     "esbuild-style-plugin": "^1.6.3",
