@@ -21,7 +21,7 @@
     "elysia": "^0.8.9",
     "motion": "^10.17.0",
     "relementjs": "^0.48.10",
-    "relysjs": "^0.44.10"
+    "relysjs": "^0.44.11"
   },
   "devDependencies": {
     "@rebuildjs/tailwindcss": "^0.1.35",
