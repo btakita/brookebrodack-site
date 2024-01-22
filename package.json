@@ -21,10 +21,10 @@
     "elysia": "^0.8.9",
     "motion": "^10.17.0",
     "relementjs": "^0.52.4",
-    "relysjs": "^0.50.0"
+    "relysjs": "^0.54.0"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.1.49",
+    "@rebuildjs/tailwindcss": "^0.1.55",
     "bun-types": "latest",
     "cssnano": "^6.0.3",
     "esbuild-style-plugin": "^1.6.3",

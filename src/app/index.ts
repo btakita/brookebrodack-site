@@ -11,7 +11,7 @@ import {
 	is_prod_,
 	port__set,
 	static_middleware_
-} from 'relysjs'
+} from 'relysjs/server'
 export default async ()=>{
 	config__init()
 	return _app__start(
