@@ -20,11 +20,11 @@
     "ctx-core": "^5.25.3",
     "elysia": "^0.8.9",
     "motion": "^10.17.0",
-    "relementjs": "^0.53.0",
+    "relementjs": "^0.53.1",
     "relysjs": "^0.55.1"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.1.55",
+    "@rebuildjs/tailwindcss": "^0.1.56",
     "bun-types": "latest",
     "cssnano": "^6.0.3",
     "esbuild-style-plugin": "^1.6.3",
