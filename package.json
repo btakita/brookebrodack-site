@@ -20,7 +20,7 @@
     "ctx-core": "^5.30.0",
     "elysia": "^0.8.10",
     "motion": "^10.17.0",
-    "relementjs": "^0.55.0",
+    "relementjs": "^0.56.0",
     "relysjs": "^0.57.1"
   },
   "devDependencies": {
