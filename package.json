@@ -5,7 +5,9 @@
   "scripts": {
     "build": "bun src/build.ts",
     "clear": "rm -rf ./dist",
-    "dev": "bun --watch src/index.ts",
+    "dev": "bun run dev:map",
+    "dev:map": "./bin/dev.ts",
+    "dev:raw": "bun --watch src/index.ts",
     "start": "bun ./start.ts",
     "clean": "rm -rf ./node_modules/.vite"
   },
@@ -24,10 +26,12 @@
     "relysjs": "^0.58.1"
   },
   "devDependencies": {
+    "@ctx-core/source-map": "^0.2.22",
     "@rebuildjs/tailwindcss": "^0.2.11",
     "bun-types": "latest",
     "cssnano": "^6.0.3",
     "esbuild-style-plugin": "^1.6.3",
+    "picocolors": "^1.0.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1"
   },
