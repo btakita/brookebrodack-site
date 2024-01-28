@@ -28,9 +28,13 @@ export async function build(config?:relysjs__build_config_T) {
 		],
 	})
 }
-is_entry_file_(import.meta.url, process.argv[1])
-	.then(async is_entry_file=>{
-		if (is_entry_file) {
-			await build({ rebuildjs: { watch: false }, relysjs: { app__start: false } })
-		}
-	})
+if (is_entry_file_(import.meta.url, process.argv[1])) {
+	build({
+		rebuildjs: { watch: false },
+		relysjs: { app__start: false }
+	}).then(()=>process.exit(0))
+		.catch(err=>{
+			console.error(err)
+			process.exit(1)
+		})
+}
