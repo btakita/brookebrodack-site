@@ -32,7 +32,7 @@ export default async ()=>{
 	)
 }
 export function config__init() {
-	const port = parseInt(import_meta_env_().BROOKEBRODACK_PORT) || 4020
+	const port = parseInt(import_meta_env_().BROOKEBRODACK_PORT) || 4101
 	port__set(app_ctx, port)
 	cwd__set(app_ctx, resolve(join(dirname(new URL(import.meta.url).pathname), '../..')))
 	relement__use(server__relement)
