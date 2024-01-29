@@ -21,6 +21,7 @@
     "@ctx-core/dom": "^15.3.13",
     "ctx-core": "^5.34.0",
     "elysia": "^0.8.14",
+    "esmcss": "^0.1.7",
     "motion": "^10.17.0",
     "relementjs": "^0.58.1",
     "relysjs": "^0.61.2"
