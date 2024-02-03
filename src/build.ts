@@ -3,7 +3,12 @@ import { is_entry_file_ } from 'ctx-core/fs'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
 import { readdir } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
-import { type relysjs__build_config_T, relysjs_browser__build, relysjs_server__build } from 'relysjs/server'
+import {
+	type relysjs__build_config_T,
+	relysjs__ready__wait,
+	relysjs_browser__build,
+	relysjs_server__build
+} from 'relysjs/server'
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
@@ -21,16 +26,7 @@ export async function build(config?:relysjs__build_config_T) {
 			rebuild_tailwind_plugin,
 		],
 	})
-}
-if (is_entry_file_(import.meta.url, process.argv[1])) {
-	build({
-		rebuildjs: { watch: false },
-		relysjs: { app__start: false }
-	}).then(()=>process.exit(0))
-		.catch(err=>{
-			console.error(err)
-			process.exit(1)
-		})
+	await relysjs__ready__wait()
 }
 function server_external_() {
 	return readdir(
@@ -44,4 +40,14 @@ function server_external_() {
 		file_a1
 			.filter(file=>file !== '@btakita')
 			.map(file=>file[0] === '@' ? file + '/*' : file))
+}
+if (is_entry_file_(import.meta.url, process.argv[1])) {
+	build({
+		rebuildjs: { watch: false },
+		relysjs: { app__start: false }
+	}).then(()=>process.exit(0))
+		.catch(err=>{
+			console.error(err)
+			process.exit(1)
+		})
 }

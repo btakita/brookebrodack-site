@@ -1,4 +1,3 @@
-import { rebuildjs_tailwind__ready__wait } from '@rebuildjs/tailwindcss'
 import { import_meta_env_ } from 'ctx-core/env'
 import { Elysia } from 'elysia'
 import { dirname, join, resolve } from 'path'
@@ -15,7 +14,6 @@ import {
 } from 'relysjs/server'
 export default async ()=>{
 	config__init()
-	await rebuildjs_tailwind__ready__wait()
 	return _app__start(
 		new Elysia()
 			.use(await static_middleware_(
