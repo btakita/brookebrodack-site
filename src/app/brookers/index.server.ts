@@ -1,5 +1,5 @@
 import '../index.css'
-import { brookers__page_ } from '@btakita/ui--server--brookebrodack/brookers'
+import { brookers__doc_html_ } from '@btakita/ui--server--brookebrodack/brookers'
 import { type DecoratorBase, Elysia } from 'elysia'
 import { type elysia_context_T, html_route_, middleware_ } from 'relysjs/server'
 export default middleware_(middleware_ctx=>
@@ -7,4 +7,4 @@ export default middleware_(middleware_ctx=>
 		name: 'brookers_routes'
 	}).get(
 		'/brookers',
-		html_route_(middleware_ctx, brookers__page_)))
+		html_route_(middleware_ctx, brookers__doc_html_)))

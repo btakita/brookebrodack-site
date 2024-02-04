@@ -5,7 +5,6 @@
 		"target": "esnext",
 		"moduleResolution": "nodenext",
 		"moduleDetection": "force",
-		"allowImportingTsExtensions": true,
 		"noEmit": true,
 		"composite": true,
 		"strict": true,
