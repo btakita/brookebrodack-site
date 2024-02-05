@@ -23,16 +23,16 @@
     "elysia": "^0.8.15",
     "esmcss": "^0.1.7",
     "relementjs": "^0.64.1",
-    "relysjs": "^1.5.1",
+    "relysjs": "^1.6.0",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@ctx-core/source-map": "^0.2.38",
-    "@rebuildjs/tailwindcss": "^0.7.1",
+    "@rebuildjs/tailwindcss": "^0.7.3",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "picocolors": "^1.0.0",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.34",
     "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
