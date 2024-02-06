@@ -12,12 +12,11 @@
     "clean": "rm -rf ./node_modules/.vite"
   },
   "dependencies": {
-    "@btakita/domain--any--blog": "workspace:*",
     "@btakita/domain--browser--brookebrodack": "workspace:*",
-    "@btakita/domain--server--blog": "workspace:*",
     "@btakita/ui--any--brookebrodack": "workspace:*",
     "@btakita/ui--browser--brookebrodack": "workspace:*",
     "@btakita/ui--server--brookebrodack": "workspace:*",
+    "@rappstack/domain--any--blog": "workspace:*",
     "cssnano": "^6.0.3",
     "ctx-core": "^5.38.1",
     "elysia": "^0.8.15",

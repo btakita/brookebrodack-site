@@ -45,7 +45,7 @@ function server_external_() {
 			'node_modules'),
 	).then(file_a1=>
 		file_a1
-			.filter(file=>file !== '@btakita')
+			.filter(file=>file !== '@btakita' && file !== '@rappstack')
 			.map(file=>file[0] === '@' ? file + '/*' : file))
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
