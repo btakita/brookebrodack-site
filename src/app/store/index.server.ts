@@ -6,4 +6,4 @@ export default middleware_(middleware_ctx=>
 		name: 'brookers_routes'
 	}).get(
 		'/brookers',
-		()=>''))
+		()=>'<div class="mt-0"></div>'))

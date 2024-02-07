@@ -19,15 +19,15 @@
     "@rappstack/domain--any--blog": "workspace:*",
     "cssnano": "^6.0.3",
     "ctx-core": "^5.38.1",
-    "elysia": "^0.8.15",
+    "elysia": "^0.8.16",
     "esmcss": "^0.1.7",
     "relementjs": "^0.64.2",
-    "relysjs": "^1.6.3",
+    "relysjs": "^1.7.0",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@ctx-core/source-map": "^0.2.38",
-    "@rebuildjs/tailwindcss": "^0.7.4",
+    "@rebuildjs/tailwindcss": "^0.8.0",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "picocolors": "^1.0.0",
