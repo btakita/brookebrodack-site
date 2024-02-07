@@ -27,11 +27,11 @@
   },
   "devDependencies": {
     "@ctx-core/source-map": "^0.2.38",
-    "@rebuildjs/tailwindcss": "^0.8.3",
+    "@rebuildjs/tailwindcss": "^0.8.4",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "picocolors": "^1.0.0",
-    "postcss": "^8.4.34",
+    "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
