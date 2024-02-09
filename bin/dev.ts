@@ -2,7 +2,7 @@
 import { sourcemap_writable_stream_ } from '@ctx-core/source-map'
 import { red } from 'picocolors'
 const dev = Bun.spawn(
-	['bun', 'src/index.ts'], {
+	['bun', 'index.ts'], {
 		stdin: 'inherit',
 		stdout: 'pipe',
 		stderr: 'pipe',

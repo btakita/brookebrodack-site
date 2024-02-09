@@ -1,13 +1,13 @@
 {
   "name": "@btakita/brookebrodack-site",
-  "module": "src/index.ts",
+  "module": "index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun src/build.ts",
+    "build": "bun build.ts",
     "clear": "rm -rf ./dist",
     "dev": "bun run dev:map",
     "dev:map": "./bin/dev.ts",
-    "dev:raw": "bun src/index.ts",
+    "dev:raw": "bun index.ts",
     "start": "bun ./start.ts",
     "clean": "rm -rf ./node_modules/.vite"
   },

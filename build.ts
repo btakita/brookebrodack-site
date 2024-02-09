@@ -41,7 +41,6 @@ function server_external_() {
 			dirname(new URL(import.meta.url).pathname),
 			'..',
 			'..',
-			'..',
 			'node_modules'),
 	).then(file_a1=>
 		file_a1
