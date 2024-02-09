@@ -19,21 +19,23 @@ export async function build(config?:relysjs__build_config_T) {
 			cssnano({ preset: 'default' })
 		],
 	})
-	await relysjs_browser__build({
-		...config ?? {},
-		plugins: [rebuild_tailwind_plugin],
-	})
-	await relysjs_server__build({
-		...config ?? {},
-		target: 'es2022',
-		external: await server_external_(),
-		minify: false,
-		plugins: [
-			esmcss_esbuild_plugin_(),
-			rebuild_tailwind_plugin,
-		],
-	})
-	await relysjs__ready__wait()
+	await Promise.all([
+		relysjs_browser__build({
+			...config ?? {},
+			plugins: [rebuild_tailwind_plugin],
+		}),
+		relysjs_server__build({
+			...config ?? {},
+			target: 'es2022',
+			external: await server_external_(),
+			minify: false,
+			plugins: [
+				esmcss_esbuild_plugin_(),
+				rebuild_tailwind_plugin,
+			],
+		}),
+		relysjs__ready__wait(),
+	])
 }
 function server_external_() {
 	return readdir(
