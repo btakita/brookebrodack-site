@@ -15,6 +15,7 @@ import {
 export default async ()=>{
 	config__init()
 	return new Elysia()
+		.use(compression_middleware_())
 		.use(await static_middleware_(
 			is_prod_(app_ctx)
 				? {
@@ -23,7 +24,6 @@ export default async ()=>{
 					})
 				}
 				: {}))
-		.use(compression_middleware_())
 		.onError(({ error, request })=>{
 			console.error(request.url, error)
 		})
