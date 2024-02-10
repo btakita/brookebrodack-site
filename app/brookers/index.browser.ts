@@ -1,8 +1,8 @@
 import { brookers__div__bind } from '@btakita/ui--browser--brookebrodack/brookers'
-import { hy__bind } from 'relementjs/browser'
+import { hy_op } from 'relementjs/browser/hy'
 window.addEventListener('load', ()=>{
 	queueMicrotask(()=>{
-		hy__bind(document, {
+		hy_op(document, {
 			brookers: brookers__div__bind,
 		})
 	})
