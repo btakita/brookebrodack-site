@@ -34,7 +34,7 @@ export async function build(config?:relysjs__build_config_T) {
 				rebuild_tailwind_plugin,
 			],
 		}),
-		relysjs__ready__wait(),
+		relysjs__ready__wait(10_000),
 	])
 }
 function server_external_() {
