@@ -5,7 +5,7 @@ import { import_meta_env_ } from 'ctx-core/env'
 import { is_entry_file_ } from 'ctx-core/fs'
 import { type Plugin } from 'esbuild'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { readdir, readFile } from 'node:fs/promises'
+import { readdir } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import {
 	type relysjs__build_config_T,
@@ -22,22 +22,7 @@ export async function build(config?:relysjs__build_config_T) {
 			cssnano({ preset: 'default' })
 		],
 	})
-	const hyop_plugin = {
-		name: 'hyop',
-		setup(build) {
-			if (import_meta_env_().NODE_ENV !== 'production') {
-				build.onLoad({ filter: /hyop\/?.*$/ }, async ({ path })=>{
-					const source = await Bun.file(path).text()
-					return {
-						contents: preprocess(
-							source,
-							{ DEBUG: '1' },
-							{ type: 'js' })
-					}
-				})
-			}
-		}
-	} as Plugin
+	const hyop_plugin = hyop_plugin_()
 	await Promise.all([
 		relysjs_browser__build({
 			...config ?? {},
@@ -78,4 +63,22 @@ if (is_entry_file_(import.meta.url, process.argv[1])) {
 			console.error(err)
 			process.exit(1)
 		})
+}
+function hyop_plugin_():Plugin {
+	return {
+		name: 'hyop',
+		setup(build) {
+			if (import_meta_env_().NODE_ENV !== 'production') {
+				build.onLoad({ filter: /hyop\/?.*$/ }, async ({ path })=>{
+					const source = await Bun.file(path).text()
+					return {
+						contents: preprocess(
+							source,
+							{ DEBUG: '1' },
+							{ type: 'js' })
+					}
+				})
+			}
+		}
+	}
 }
