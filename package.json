@@ -25,7 +25,7 @@
     "elysia": "^0.8.16",
     "esmcss": "^0.1.8",
     "relementjs": "^0.71.9",
-    "relysjs": "^1.11.3",
+    "relysjs": "^1.11.5",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
