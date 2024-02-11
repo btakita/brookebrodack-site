@@ -1,8 +1,11 @@
+import { preprocess } from '@ctx-core/preprocess'
 import { rebuild_tailwind_plugin_ } from '@rebuildjs/tailwindcss'
 import cssnano from 'cssnano'
+import { import_meta_env_ } from 'ctx-core/env'
 import { is_entry_file_ } from 'ctx-core/fs'
+import { type Plugin } from 'esbuild'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { readdir } from 'node:fs/promises'
+import { readdir, readFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import {
 	type relysjs__build_config_T,
@@ -19,10 +22,26 @@ export async function build(config?:relysjs__build_config_T) {
 			cssnano({ preset: 'default' })
 		],
 	})
+	const hyop_plugin = {
+		name: 'hyop',
+		setup(build) {
+			if (import_meta_env_().NODE_ENV !== 'production') {
+				build.onLoad({ filter: /hyop\/?.*$/ }, async ({ path })=>{
+					const source = await Bun.file(path).text()
+					return {
+						contents: preprocess(
+							source,
+							{ DEBUG: '1' },
+							{ type: 'js' })
+					}
+				})
+			}
+		}
+	} as Plugin
 	await Promise.all([
 		relysjs_browser__build({
 			...config ?? {},
-			plugins: [rebuild_tailwind_plugin],
+			plugins: [rebuild_tailwind_plugin, hyop_plugin],
 		}),
 		relysjs_server__build({
 			...config ?? {},
@@ -32,6 +51,7 @@ export async function build(config?:relysjs__build_config_T) {
 			plugins: [
 				esmcss_esbuild_plugin_(),
 				rebuild_tailwind_plugin,
+				hyop_plugin,
 			],
 		}),
 		relysjs__ready__wait(10_000),

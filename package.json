@@ -29,8 +29,9 @@
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
+    "@ctx-core/preprocess": "^0.1.2",
     "@ctx-core/source-map": "^0.2.44",
-    "@rebuildjs/tailwindcss": "^0.8.29",
+    "@rebuildjs/tailwindcss": "^0.8.30",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "picocolors": "^1.0.0",
