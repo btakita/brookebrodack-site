@@ -1,3 +1,4 @@
+import { sqlite_db__name__set } from '@rappstack/domain--server/sqlite'
 import { import_meta_env_ } from 'ctx-core/env'
 import { Elysia } from 'elysia'
 import { relement__use } from 'relementjs'
@@ -33,4 +34,5 @@ export function config__init() {
 	src_path__set(app_ctx, process.cwd())
 	port__set(app_ctx, port)
 	relement__use(server__relement)
+	sqlite_db__name__set(app_ctx, './db/app.db')
 }

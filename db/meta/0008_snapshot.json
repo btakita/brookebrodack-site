@@ -1,31 +1,40 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "ccec6f1f-8349-47e6-b486-507efdd3d5eb",
-  "prevId": "2661c84f-73fb-4286-ba53-45b683a048cf",
+  "id": "fb0ba094-ca32-4efc-af28-6f24a983fe37",
+  "prevId": "1c740dee-d65b-491a-ba21-e1f4426cc04e",
   "tables": {
     "text_cache": {
       "name": "text_cache",
       "columns": {
-        "cache_id": {
-          "name": "cache_id",
+        "text_cache_id": {
+          "name": "text_cache_id",
           "type": "text",
           "primaryKey": true,
           "notNull": true,
           "autoincrement": false
         },
-        "timestamp_ms": {
-          "name": "timestamp_ms",
+        "create_ms": {
+          "name": "create_ms",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "validate_ms": {
+          "name": "validate_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
         },
         "data": {
           "name": "data",
           "type": "text",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         }
       },
@@ -266,6 +275,86 @@
           "name": "verification_token_identifier_token_pk"
         }
       },
+      "uniqueConstraints": {}
+    },
+    "youtube_video": {
+      "name": "youtube_video",
+      "columns": {
+        "videoId": {
+          "name": "videoId",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "channelId": {
+          "name": "channelId",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "create_ms": {
+          "name": "create_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "author_name": {
+          "name": "author_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "author_uri": {
+          "name": "author_uri",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "published_ms": {
+          "name": "published_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "updated_ms": {
+          "name": "updated_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "thumbnail": {
+          "name": "thumbnail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     }
   },
