@@ -25,7 +25,17 @@ export default async ()=>{
 				}
 				: {}))
 		.onError(({ error, request })=>{
-			console.error(request.url, error)
+			console.error(
+				request.url,
+				error.message + '\n',
+				error.stack + '\n',
+				...(error.cause
+					? [
+						'Cause:\n',
+						(error.cause as Error).message + '\n',
+						(error.cause as Error).stack
+					]
+					: []))
 		})
 }
 export function config__init() {
