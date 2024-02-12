@@ -5,14 +5,14 @@
   "scripts": {
     "build": "bun build.ts",
     "clear": "rm -rf ./dist",
-    "dev": "bun run dev:map",
-    "dev:map": "./bin/dev.ts",
+    "dev": "bun run dev:sourcemap__resolve__bun",
     "dev:raw": "bun index.ts",
+    "dev:sourcemap__resolve__bun": "bin/sourcemap__resolve__bun.ts -f index.ts",
     "db:drop": "drizzle-kit drop",
     "db:generate": "drizzle-kit generate:sqlite",
     "db:migrate": "bun ./db/migrate.ts",
     "db:push": "drizzle-config push:sqlite",
-    "start": "bun ./start.ts",
+    "start": "bin/sourcemap__resolve__bun.ts -f start.ts",
     "clean": "rm -rf ./node_modules/.vite"
   },
   "dependencies": {
