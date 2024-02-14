@@ -1,5 +1,5 @@
 import '../index.css'
-import { brookebrodack_youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtube'
+import { youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtube'
 import { content__doc_html_ } from '@btakita/ui--server--brookebrodack/content'
 import { type DecoratorBase, Elysia } from 'elysia'
 import {
@@ -17,7 +17,7 @@ export default middleware_(middleware_ctx=>
 		async context=>{
 			const request_ctx = request_ctx__ensure(middleware_ctx, context)
 			await rmemo__wait(
-				()=>brookebrodack_youtube_video_a1_(request_ctx),
+				()=>youtube_video_a1_(request_ctx),
 				brookebrodack_youtube_video_a1=>brookebrodack_youtube_video_a1,
 				20_000)
 			return html_response__new(
