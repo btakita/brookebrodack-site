@@ -16,7 +16,7 @@
     "clean": "rm -rf ./node_modules/.vite"
   },
   "dependencies": {
-    "@auth/core": "^0.26.3",
+    "@auth/core": "^0.27.0",
     "@btakita/domain--server--brookebrodack": "workspace:*",
     "@btakita/ui--browser--brookebrodack": "workspace:*",
     "@btakita/ui--server--brookebrodack": "workspace:*",
