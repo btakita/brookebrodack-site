@@ -1,0 +1,1 @@
+ALTER TABLE text_cache ADD `etag` text;

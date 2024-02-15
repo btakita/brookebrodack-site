@@ -8,6 +8,20 @@
       "when": 1707776917302,
       "tag": "0000_steep_puppet_master",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1708014940890,
+      "tag": "0001_high_darkstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1708036606786,
+      "tag": "0002_late_miek",
+      "breakpoints": true
     }
   ]
 }

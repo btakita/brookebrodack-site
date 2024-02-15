@@ -1,6 +1,7 @@
 import '../index.css'
 import { youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtube'
 import { content__doc_html_ } from '@btakita/ui--server--brookebrodack/content'
+import { I } from 'ctx-core/combinators'
 import { type DecoratorBase, Elysia } from 'elysia'
 import {
 	type elysia_context_T,
@@ -18,7 +19,7 @@ export default middleware_(middleware_ctx=>
 			const request_ctx = request_ctx__ensure(middleware_ctx, context)
 			await rmemo__wait(
 				()=>youtube_video_a1_(request_ctx),
-				brookebrodack_youtube_video_a1=>brookebrodack_youtube_video_a1,
+				I,
 				20_000)
 			return html_response__new(
 				content__doc_html_({
