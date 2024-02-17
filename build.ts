@@ -23,7 +23,6 @@ export async function build(config?:relysjs__build_config_T) {
 		],
 	})
 	const preprocess_plugin = preprocess_plugin_()
-	const esmfile_plugin = esmfile_plugin_()
 	await Promise.all([
 		relysjs_browser__build({
 			...config ?? {},
@@ -31,7 +30,6 @@ export async function build(config?:relysjs__build_config_T) {
 			plugins: [
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
-				esmfile_plugin
 			],
 		}),
 		relysjs_server__build({
@@ -44,7 +42,6 @@ export async function build(config?:relysjs__build_config_T) {
 				esmcss_esbuild_plugin_(),
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
-				esmfile_plugin,
 			],
 		}),
 		relysjs__ready__wait(10_000),
@@ -90,24 +87,6 @@ function preprocess_plugin_():Plugin {
 							{ type: 'js' })
 					}
 				})
-			}
-		}
-	}
-}
-function esmfile_plugin_():Plugin {
-	return {
-		name: 'esmfile',
-		setup(build) {
-			if (import_meta_env_().NODE_ENV !== 'production') {
-				build.onLoad(
-					{ filter: /\.file\.(js|ts)$/ },
-					async config=>{
-						const { path, suffix } = config
-						await import(path + (suffix ?? '')).then(mod=>console.debug('esmfile_plugin|debug|1', { mod }))
-						const contents = await import(path + (suffix ?? '')).then(mod=>mod.default())
-						return { contents, loader: 'file' }
-					}
-				)
 			}
 		}
 	}
