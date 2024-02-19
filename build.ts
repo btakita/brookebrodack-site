@@ -23,6 +23,7 @@ export async function build(config?:relysjs__build_config_T) {
 		],
 	})
 	const preprocess_plugin = preprocess_plugin_()
+	const fileesm = fileesm_()
 	await Promise.all([
 		relysjs_browser__build({
 			...config ?? {},
@@ -30,6 +31,7 @@ export async function build(config?:relysjs__build_config_T) {
 			plugins: [
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
+				fileesm,
 			],
 		}),
 		relysjs_server__build({
@@ -42,6 +44,7 @@ export async function build(config?:relysjs__build_config_T) {
 				esmcss_esbuild_plugin_(),
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
+				fileesm,
 			],
 		}),
 		relysjs__ready__wait(10_000),
@@ -75,7 +78,7 @@ if (is_entry_file_(import.meta.url, process.argv[1])) {
 }
 function preprocess_plugin_():Plugin {
 	return {
-		name: 'hyop',
+		name: 'preprocess',
 		setup(build) {
 			if (import_meta_env_().NODE_ENV !== 'production') {
 				build.onLoad({ filter: /(\/ctx-core\/?.*|\/hyop\/?.*)$/ }, async ({ path })=>{
@@ -89,5 +92,37 @@ function preprocess_plugin_():Plugin {
 				})
 			}
 		}
+	}
+}
+/** @see {https://github.com/evanw/esbuild/issues/3653#issuecomment-1951577552} */
+function fileesm_() {
+	return <Plugin>{
+		name: 'fileesm',
+		setup(build) {
+			build.onResolve(
+				{ filter: /\.file\.(js|ts)$/ },
+				async ({ path, ...args })=>{
+					// Avoid recursion in resolve() below
+					if (args.pluginData === 'fileesm') return
+					// Tell esbuild to resolve the path
+					const result = await build.resolve(path, { ...args, pluginData: 'fileesm' })
+					if (result.errors.length > 0) return { errors: result.errors }
+					return {
+						path: result.path.slice(0, -8), // "svg.file.js" => ".svg"
+						pluginData: 'fileesm:' + result.path, // Save the original path
+					}
+				}
+			)
+			build.onLoad(
+				{ filter: /.*$/ },
+				async ({ pluginData })=>{
+					// Load the original path
+					if (!pluginData?.startsWith('fileesm:')) return
+					const path = pluginData.slice('fileesm:'.length)
+					const contents = await import(path).then(mod=>mod.default())
+					return { contents, loader: 'file' }
+				}
+			)
+		},
 	}
 }
