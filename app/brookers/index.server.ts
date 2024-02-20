@@ -1,10 +1,19 @@
 import '../index.css'
 import { brookers__doc_html_ } from '@btakita/ui--server--brookebrodack/brookers'
+import { site_request_ctx__ensure } from '@rappstack/domain--server/ctx'
 import { type DecoratorBase, Elysia } from 'elysia'
-import { type elysia_context_T, html_route_, middleware_ } from 'relysjs/server'
+import { type elysia_context_T, html_response__new, middleware_ } from 'relysjs/server'
+import { site, social_a1 } from '../config.js'
 export default middleware_(middleware_ctx=>
 	new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'brookers_routes'
 	}).get(
 		'/brookers',
-		html_route_(middleware_ctx, brookers__doc_html_)))
+		context=>
+			html_response__new(
+				brookers__doc_html_({
+					ctx: site_request_ctx__ensure(middleware_ctx, context, {
+						site,
+						social_a1
+					})
+				}))))
