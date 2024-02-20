@@ -30,13 +30,13 @@
     "esbuild-plugin-esmfile": "^0.1.1",
     "esmcss": "^0.2.2",
     "relementjs": "^0.73.3",
-    "relysjs": "^1.14.4",
+    "relysjs": "^1.14.6",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@ctx-core/preprocess": "^0.1.2",
     "@ctx-core/source-map": "^0.2.50",
-    "@rebuildjs/tailwindcss": "^0.8.42",
+    "@rebuildjs/tailwindcss": "^0.8.43",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "picocolors": "^1.0.0",
