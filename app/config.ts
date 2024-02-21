@@ -12,25 +12,25 @@ export const site:site_T = {
 }
 export const social_a1:social_T[] = [
 	{
-		icon_html: fa_youtube_(),
+		icon_: fa_youtube_,
 		href: youtube_url,
 		link_title: site.title + ' YouTube Channel',
 		active: true
 	},
 	{
-		icon_html: fa_patreon_(),
+		icon_: fa_patreon_,
 		href: patreon_url,
 		link_title: site.title + `'s Patreon`,
 		active: true
 	},
 	{
-		icon_html: fa_instagram_(),
+		icon_: fa_instagram_,
 		href: instagram_url,
 		link_title: site.title + `'s Instagram`,
 		active: true
 	},
 	{
-		icon_html: fa_linkedin_in_(),
+		icon_: fa_linkedin_in_,
 		href: linkedin_url,
 		link_title: site.title + `'s LinkedIn`,
 		active: true
