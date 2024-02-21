@@ -18,7 +18,7 @@ export default middleware_(middleware_ctx=>
 						site, social_a1
 					})
 				})))
-		.get('/rss.xml', async context=>{
+		.get('/rss', async context=>{
 			const ctx = site_request_ctx__ensure(middleware_ctx, context, {
 				site, social_a1
 			})
