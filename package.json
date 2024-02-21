@@ -13,7 +13,7 @@
     "db:migrate": "bun ./db/migrate.ts",
     "db:push": "drizzle-config push:sqlite",
     "start": "bin/sourcemap__resolve__bun.ts -f start.ts",
-    "clean": "rm -rf ./node_modules/.vite"
+    "clean": "rm -rf ./dist"
   },
   "dependencies": {
     "@auth/core": "^0.27.0",
