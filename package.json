@@ -12,7 +12,7 @@
     "db:generate": "drizzle-kit generate:sqlite",
     "db:migrate": "bun ./db/migrate.ts",
     "db:push": "drizzle-config push:sqlite",
-    "start": "bin/sourcemap__resolve__bun.ts -f start.ts",
+    "start": "sourcemap__resolve__bun -f start.ts",
     "clean": "rm -rf ./dist"
   },
   "dependencies": {
