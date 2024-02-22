@@ -14,7 +14,7 @@ import {
 	relysjs_browser__build,
 	relysjs_server__build
 } from 'relysjs/server'
-import { config__init } from './app/index.js'
+import { config__init } from './config.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
 	const rebuild_tailwind_plugin = rebuild_tailwind_plugin_({

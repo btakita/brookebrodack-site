@@ -1,17 +1,6 @@
-import { sqlite_db__name__set } from '@rappstack/domain--server/sqlite'
-import { import_meta_env_ } from 'ctx-core/env'
 import { Elysia } from 'elysia'
-import { relement__use } from 'relementjs'
-import { server__relement } from 'relementjs/server'
-import {
-	app_ctx,
-	compression_middleware_,
-	cwd__set,
-	is_prod_,
-	port__set,
-	src_path__set,
-	static_middleware_,
-} from 'relysjs/server'
+import { app_ctx, compression_middleware_, is_prod_, static_middleware_, } from 'relysjs/server'
+import { config__init } from '../config.js'
 export default async ()=>{
 	config__init()
 	return new Elysia()
@@ -37,12 +26,4 @@ export default async ()=>{
 					]
 					: []))
 		})
-}
-export function config__init() {
-	const port = parseInt(import_meta_env_().BROOKEBRODACK_PORT) || 4101
-	cwd__set(app_ctx, process.cwd())
-	src_path__set(app_ctx, process.cwd())
-	port__set(app_ctx, port)
-	relement__use(server__relement)
-	sqlite_db__name__set(app_ctx, './db/app.db')
 }
