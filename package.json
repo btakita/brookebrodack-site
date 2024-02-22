@@ -7,7 +7,7 @@
     "clear": "rm -rf ./dist",
     "dev": "bun run dev:sourcemap__resolve__bun",
     "dev:raw": "bun index.ts",
-    "dev:sourcemap__resolve__bun": "bin/sourcemap__resolve__bun.ts -f index.ts",
+    "dev:sourcemap__resolve__bun": "sourcemap__resolve__bun -f index.ts",
     "db:drop": "drizzle-kit drop",
     "db:generate": "drizzle-kit generate:sqlite",
     "db:migrate": "bun ./db/migrate.ts",
@@ -34,12 +34,11 @@
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
+    "@btakita/dev-bin": "workspace:*",
     "@ctx-core/preprocess": "^0.1.2",
-    "@ctx-core/source-map": "^0.2.51",
     "@rebuildjs/tailwindcss": "^0.8.44",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
-    "picocolors": "^1.0.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
   },
