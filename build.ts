@@ -15,9 +15,11 @@ import {
 	relysjs_server__build
 } from 'relysjs/server'
 import { config__init } from './config.js'
+import tailwindcss_config from './tailwind.config.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
 	const rebuild_tailwind_plugin = rebuild_tailwind_plugin_({
+		tailwindcss_config,
 		postcss_plugin_a1_: tailwindcss_plugin=>[
 			tailwindcss_plugin as never,
 			cssnano({ preset: 'default' })
