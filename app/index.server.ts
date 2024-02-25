@@ -16,7 +16,7 @@ User-agent: *
 Allow: /
 
 Sitemap: ${new URL('sitemap.xml', site.website).href}
-`
+`.trim()
 export default middleware_(middleware_ctx=>
 	new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'root_routes'
