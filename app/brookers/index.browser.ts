@@ -1,11 +1,11 @@
-import { brookers__hyop } from '@btakita/ui--browser--brookebrodack/brookers'
-import { spinner__template__hyop } from '@btakita/ui--browser--brookebrodack/spinner'
-import { YT_player__div__hyop } from '@btakita/ui--browser--brookebrodack/youtube'
-import { single_hyop } from 'relementjs/browser/hy'
+import * as brookers_hyop from '@btakita/ui--browser--brookebrodack/brookers/hyop'
+import * as spinner_hyop from '@btakita/ui--browser--brookebrodack/spinner/hyop'
+import * as youtube_hyop from '@btakita/ui--browser--brookebrodack/youtube/hyop'
+import { hyop } from 'relementjs/browser/hy'
 window.addEventListener('load', ()=>{
-	single_hyop(document, {
-		brookers__hyop,
-		spinner__template__hyop,
-		YT_player__div__hyop,
+	hyop(document, {
+		...brookers_hyop,
+		...spinner_hyop,
+		...youtube_hyop,
 	})
 })
