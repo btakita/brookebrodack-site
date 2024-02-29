@@ -2,7 +2,8 @@ import { instagram_url, linkedin_url, patreon_url, youtube_url } from '@btakita/
 import { fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
 import { type site_T } from '@rappstack/domain--server/site'
 import { type social_T } from '@rappstack/domain--server/social'
-import { sqlite_db__name__set } from '@rappstack/domain--server/sqlite'
+import { sqlite_db__set } from '@rappstack/domain--server/sqlite'
+import Database from 'bun:sqlite'
 import { import_meta_env_ } from 'ctx-core/env'
 import { relement__use } from 'relementjs'
 import { server__relement } from 'relementjs/server'
@@ -47,5 +48,7 @@ export function config__init() {
 	src_path__set(app_ctx, process.cwd())
 	port__set(app_ctx, port)
 	relement__use(server__relement)
-	sqlite_db__name__set(app_ctx, './db/app.db')
+	const sqlite_db = new Database('./db/app.db')
+	sqlite_db.exec('PRAGMA journal_mode = WAL;')
+	sqlite_db__set(app_ctx, sqlite_db)
 }
