@@ -89,7 +89,8 @@ function preprocess_plugin_():Plugin {
 						contents: preprocess(
 							source,
 							{ DEBUG: '1' },
-							{ type: 'js' })
+							{ type: 'js' }),
+						loader: 'ts'
 					}
 				})
 			}
