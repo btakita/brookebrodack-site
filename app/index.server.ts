@@ -9,12 +9,8 @@ import { type DecoratorBase, Elysia } from 'elysia'
 import { type elysia_context_T, html_response__new, middleware_, rmemo__wait } from 'relysjs/server'
 import { site, social_a1 } from '../config.js'
 const robots_txt = `
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
-
 Sitemap: ${new URL('sitemap.xml', site.website).href}
 `.trim()
 export default middleware_(middleware_ctx=>
