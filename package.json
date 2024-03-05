@@ -26,8 +26,8 @@
     "drizzle-kit": "^0.20.14",
     "drizzle-orm": "^0.29.4",
     "elysia": "^0.8.17",
-    "esbuild-plugin-esmfile": "^0.1.1",
-    "esmcss": "^0.2.2",
+    "esbuild-plugin-esmfile": "^0.1.2",
+    "esmcss": "^0.2.3",
     "relementjs": "^0.74.3",
     "relysjs": "^1.14.18",
     "tailwindcss-noscript": "^2.0.1"
