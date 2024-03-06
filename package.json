@@ -29,13 +29,13 @@
     "esbuild-plugin-esmfile": "^0.1.2",
     "esmcss": "^0.2.3",
     "relementjs": "^0.74.3",
-    "relysjs": "^1.14.18",
+    "relysjs": "^1.15.0",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@btakita/dev-bin": "workspace:*",
     "@ctx-core/preprocess": "^0.1.2",
-    "@rebuildjs/tailwindcss": "^0.8.53",
+    "@rebuildjs/tailwindcss": "^0.8.56",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "postcss": "^8.4.35",
