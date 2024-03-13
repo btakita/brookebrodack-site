@@ -7,7 +7,7 @@ import { site_request_ctx__ensure } from '@rappstack/domain--server/ctx'
 import { I } from 'ctx-core/combinators'
 import { type DecoratorBase, Elysia } from 'elysia'
 import { type elysia_context_T, html_response__new, middleware_, rmemo__wait } from 'relysjs/server'
-import { site, social_a1 } from '../config.js'
+import { site } from '../config.js'
 const robots_txt = `
 User-agent: *
 Allow: /
@@ -20,18 +20,14 @@ export default middleware_(middleware_ctx=>
 		.get('/', context=>
 			html_response__new(
 				home__doc_html_({
-					ctx: site_request_ctx__ensure(middleware_ctx, context, {
-						site, social_a1
-					})
+					ctx: site_request_ctx__ensure(middleware_ctx, context, { site })
 				})))
 		.get('/robots.txt', ()=>
 			new Response(robots_txt, {
 				headers: { 'Content-Type': 'text/plain' },
 			}))
 		.get('/rss', async context=>{
-			const ctx = site_request_ctx__ensure(middleware_ctx, context, {
-				site, social_a1
-			})
+			const ctx = site_request_ctx__ensure(middleware_ctx, context, { site })
 			await rmemo__wait(
 				()=>youtube_video_a1_(ctx),
 				I,
@@ -50,10 +46,8 @@ export default middleware_(middleware_ctx=>
 			new Response(sitemap__xml_({
 				ctx: site_request_ctx__ensure(
 					middleware_ctx,
-					context, {
-						site,
-						social_a1,
-					})
+					context,
+					{ site })
 			}), {
 				status: 200,
 				headers: {
