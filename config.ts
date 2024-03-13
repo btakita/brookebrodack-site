@@ -1,6 +1,6 @@
 import { instagram_url, linkedin_url, patreon_url, youtube_url } from '@btakita/domain--any--brookebrodack/social'
 import { fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
-import favicon_svg from '@btakita/ui--server--brookebrodack/icon/favicon.svg.file'
+import favicon_svg from '@btakita/ui--server--brookebrodack/icon/favicon.svg.file.ts'
 import { type site_T } from '@rappstack/domain--server/site'
 import { sqlite_db__set } from '@rappstack/domain--server/sqlite'
 import Database from 'bun:sqlite'
