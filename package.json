@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@btakita/dev-bin": "workspace:*",
-    "@btakita/schema-dts": "^1.1.3-patch",
     "@ctx-core/preprocess": "^0.1.2",
     "@rebuildjs/tailwindcss": "^0.8.65",
     "bun-types": "latest",

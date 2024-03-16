@@ -3,11 +3,11 @@ import { youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtub
 import { content__rss_xml_ } from '@btakita/ui--server--brookebrodack/content'
 import { home__doc_html_ } from '@btakita/ui--server--brookebrodack/home'
 import { sitemap__xml_ } from '@btakita/ui--server--brookebrodack/sitemap'
-import { site_request_ctx__ensure } from '@rappstack/domain--server/ctx'
 import { I } from 'ctx-core/combinators'
 import { type DecoratorBase, Elysia } from 'elysia'
 import { type elysia_context_T, html_response__new, middleware_, rmemo__wait } from 'relysjs/server'
 import { site } from '../config.js'
+import { brookebrodack_request_ctx__ensure } from '../ctx/index.js'
 const robots_txt = `
 User-agent: *
 Allow: /
@@ -20,14 +20,14 @@ export default middleware_(middleware_ctx=>
 		.get('/', context=>
 			html_response__new(
 				home__doc_html_({
-					ctx: site_request_ctx__ensure(middleware_ctx, context, { site })
+					ctx: brookebrodack_request_ctx__ensure(middleware_ctx, context, { site })
 				})))
 		.get('/robots.txt', ()=>
 			new Response(robots_txt, {
 				headers: { 'Content-Type': 'text/plain' },
 			}))
 		.get('/rss', async context=>{
-			const ctx = site_request_ctx__ensure(middleware_ctx, context, { site })
+			const ctx = brookebrodack_request_ctx__ensure(middleware_ctx, context, { site })
 			await rmemo__wait(
 				()=>youtube_video_a1_(ctx),
 				I,
@@ -44,7 +44,7 @@ export default middleware_(middleware_ctx=>
 		})
 		.get('/sitemap.xml', async context=>
 			new Response(sitemap__xml_({
-				ctx: site_request_ctx__ensure(
+				ctx: brookebrodack_request_ctx__ensure(
 					middleware_ctx,
 					context,
 					{ site })
