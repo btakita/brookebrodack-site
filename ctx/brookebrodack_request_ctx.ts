@@ -1,4 +1,5 @@
 import { site_request_ctx__ensure, type site_request_ctx__ensure_config_T } from '@rappstack/domain--server/ctx'
+import { WebPage_id_ref_ } from '@rappstack/domain--server/jsonld'
 import { type middleware_ctx_T } from 'relysjs/server'
 import {
 	AboutPage_id_ref_,
@@ -18,6 +19,7 @@ export function brookebrodack_request_ctx__ensure(
 	const request_ctx = site_request_ctx__ensure(middleware_ctx, context, config)
 	Person_id_ref_(request_ctx)
 	WebSite_id_ref_(request_ctx)
+	WebPage_id_ref_(request_ctx)
 	Organization_id_ref_(request_ctx)
 	AboutPage_id_ref_(request_ctx)
 	ContactPage_id_ref_(request_ctx)
