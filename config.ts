@@ -1,11 +1,5 @@
-import {
-	instagram_url,
-	linkedin_url,
-	email_url,
-	patreon_url,
-	youtube_url
-} from '@btakita/domain--any--brookebrodack/social'
-import { fa_email_, fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
+import { instagram_url, linkedin_url, patreon_url, youtube_url } from '@btakita/domain--any--brookebrodack/social'
+import { fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
 import { type site_T } from '@rappstack/domain--server/site'
 import { sqlite_db__set } from '@rappstack/domain--server/sqlite'
 import Database from 'bun:sqlite'
@@ -56,31 +50,25 @@ export const site:site_T = {
 		{
 			icon_: fa_youtube_,
 			href: youtube_url,
-			link_title: title + ' YouTube Channel',
+			link_title: 'YouTube',
 			active: true
 		},
 		{
 			icon_: fa_patreon_,
 			href: patreon_url,
-			link_title: title + `'s Patreon`,
+			link_title: 'Patreon',
 			active: true
 		},
 		{
 			icon_: fa_instagram_,
 			href: instagram_url,
-			link_title: title + `'s Instagram`,
+			link_title: 'Instagram',
 			active: true
 		},
 		{
 			icon_: fa_linkedin_,
 			href: linkedin_url,
-			link_title: title + `'s LinkedIn`,
-			active: true
-		},
-		{
-			icon_: fa_email_,
-			href: email_url,
-			link_title: 'Email ' + author,
+			link_title: 'LinkedIn',
 			active: true
 		},
 	]
