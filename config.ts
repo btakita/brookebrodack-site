@@ -1,5 +1,11 @@
-import { instagram_url, linkedin_url, patreon_url, youtube_url } from '@btakita/domain--any--brookebrodack/social'
-import { fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
+import {
+	instagram_url,
+	linkedin_url,
+	email_url,
+	patreon_url,
+	youtube_url
+} from '@btakita/domain--any--brookebrodack/social'
+import { fa_email_, fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
 import { type site_T } from '@rappstack/domain--server/site'
 import { sqlite_db__set } from '@rappstack/domain--server/sqlite'
 import Database from 'bun:sqlite'
@@ -12,10 +18,11 @@ import { app_ctx, cwd__set, port__set, src_path__set } from 'relysjs/server'
 import brooke_brodack_logo_jpg from '../../public/assets/images/brooke-brodack-logo.jpg'
 import brooke_brodack_profile_webp from '../../public/assets/images/brooke-brodack-profile.webp'
 import favicon_svg from './icon/favicon.svg.file.js'
+const author = 'Brooke Brodack'
 const title = 'Brooke Brodack'
 export const site:site_T = {
 	website: 'https://brookebrodack.net',
-	author: 'Brooke Brodack',
+	author,
 	description: 'YouTubing since 2004',
 	title,
 	favicon: {
@@ -68,6 +75,12 @@ export const site:site_T = {
 			icon_: fa_linkedin_,
 			href: linkedin_url,
 			link_title: title + `'s LinkedIn`,
+			active: true
+		},
+		{
+			icon_: fa_email_,
+			href: email_url,
+			link_title: 'Email ' + author,
 			active: true
 		},
 	]
