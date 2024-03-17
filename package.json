@@ -29,7 +29,7 @@
     "esbuild-plugin-esmfile": "^0.2.1",
     "esmcss": "^0.2.4",
     "relementjs": "^0.74.8",
-    "relysjs": "^1.16.9",
+    "relysjs": "^1.16.12",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
