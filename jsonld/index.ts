@@ -1,4 +1,5 @@
 import { ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
+import { schema_org_id_ } from '@rappstack/domain--server/rdfa'
 import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { import_meta_env_ } from 'ctx-core/env'
 import { nullish__none_, tup, type wide_ctx_T } from 'ctx-core/rmemo'
@@ -17,7 +18,7 @@ export const [
 			site__website, site_title
 		)=><WebSite>{
 			'@type': 'WebSite',
-			'@id': url__join(site__website, '#WebSite'),
+			'@id': schema_org_id_(site__website, 'WebSite'),
 			url: site__website,
 			name: site_title,
 			publisher: Person_id_ref_(ctx),
@@ -32,7 +33,7 @@ export const [
 		site__website, site__title
 	)=><Organization>{
 		'@type': 'Organization',
-		'@id': url__join(site__website, '#Organization'),
+		'@id': schema_org_id_(site__website, 'Organization'),
 		url: site__website,
 		name: site__title,
 		logo: logo_ImageObject_id_ref_(ctx),
@@ -46,7 +47,7 @@ export const [
 		site__website
 	)=><ImageObject>{
 		'@type': 'ImageObject',
-		'@id': url__join(site__website, '#logo'),
+		'@id': schema_org_id_(site__website, 'logo'),
 		url: url__join(site__website, brooke_brodack_logo_jpg),
 		width: '256px',
 		height: '256px',
@@ -59,7 +60,7 @@ export const [
 		site__website, site__author, site__social_a1
 	)=><Person>{
 		'@type': 'Person',
-		'@id': url__join(site__website, '#Person'),
+		'@id': schema_org_id_(site__website, 'Person'),
 		url: site__website,
 		name: site__author,
 		image: url__join(site__website, brooke_brodack_profile_jpg),
@@ -86,7 +87,7 @@ export const [
 			site__website, site__author
 		)=><AboutPage>{
 			'@type': 'AboutPage',
-			'@id': url__join(site__website, 'about', '#AboutPage'),
+			'@id': schema_org_id_(url__join(site__website, 'about'), 'AboutPage'),
 			url: url__join(site__website, 'about'),
 			name: 'About | ' + site__author,
 			about: Person_id_ref_(ctx),
@@ -104,11 +105,10 @@ export const [
 	return nullish__none_(tup(site__website_(ctx), site__author_(ctx)), (
 		site__website, site__author
 	)=>{
-		const jsonld_ContactPage_id = url__join(site__website, '#ContactPage')
 		return <ContactPage>{
 			'@type': 'ContactPage',
-			'@id': jsonld_ContactPage_id,
-			url: jsonld_ContactPage_id,
+			'@id': schema_org_id_(site__website, 'ContactPage'),
+			url: site__website,
 			name: 'Contact ' + site__author,
 			inLanguage: 'en-us',
 			isPartOf: WebSite_id_ref_(ctx),
