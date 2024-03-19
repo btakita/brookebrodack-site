@@ -62,7 +62,13 @@ export const site:site_T = {
 		{
 			icon_: fa_instagram_,
 			href: instagram_url,
-			link_title: 'Instagram',
+			link_title: '@brookebrodack',
+			active: true
+		},
+		{
+			icon_: fa_instagram_,
+			href: instagram_url,
+			link_title: '@makingandmeaning_brooke',
 			active: true
 		},
 		{
