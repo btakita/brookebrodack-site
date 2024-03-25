@@ -21,7 +21,7 @@
     "@btakita/ui--server--brookebrodack": "workspace:*",
     "@rappstack/domain--server": "workspace:*",
     "@rappstack/domain--server--auth": "workspace:*",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "ctx-core": "^6.7.0",
     "drizzle-kit": "^0.20.14",
     "drizzle-orm": "^0.30.4",
