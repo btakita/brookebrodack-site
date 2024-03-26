@@ -28,7 +28,7 @@
     "elysia": "^1.0.9",
     "esbuild-plugin-esmfile": "^0.2.2",
     "esmcss": "^0.2.5",
-    "relementjs": "^0.76.0",
+    "relementjs": "^0.77.0",
     "relysjs": "^1.18.0",
     "tailwindcss-noscript": "^2.0.1"
   },
