@@ -24,7 +24,7 @@
     "cssnano": "^6.1.2",
     "ctx-core": "^6.7.0",
     "drizzle-kit": "^0.20.14",
-    "drizzle-orm": "^0.30.5",
+    "drizzle-orm": "^0.30.6",
     "elysia": "^1.0.9",
     "esbuild-plugin-esmfile": "^0.2.2",
     "esmcss": "^0.2.5",
