@@ -12,11 +12,14 @@ import { app_ctx, cwd__set, port__set, src_path__set } from 'relysjs/server'
 import brooke_brodack_logo_jpg from '../../public/assets/images/brooke-brodack-logo.jpg'
 import brooke_brodack_profile_webp from '../../public/assets/images/brooke-brodack-profile.webp'
 import favicon_svg from './icon/favicon.svg.file.js'
+const website = 'https://brookebrodack.net'
 const author = 'Brooke Brodack'
 const title = 'Brooke Brodack'
 export const site:site_T = {
-	website: 'https://brookebrodack.net',
+	website: website,
 	author,
+	author_url: website,
+	author_img_url: brooke_brodack_profile_webp,
 	description: 'YouTubing since 2004',
 	title,
 	favicon: {
