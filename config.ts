@@ -1,10 +1,11 @@
 import { instagram_url, linkedin_url, patreon_url, youtube_url } from '@btakita/domain--any--brookebrodack/social'
 import { fa_instagram_, fa_linkedin_, fa_patreon_, fa_youtube_ } from '@btakita/ui--any--brookebrodack/icon'
-import { type site_T } from '@rappstack/domain--server/site'
+import { type author_T, type site_T } from '@rappstack/domain--server/site'
 import { sqlite_db__set } from '@rappstack/domain--server/sqlite'
 import Database from 'bun:sqlite'
 import { import_meta_env_ } from 'ctx-core/env'
 import { class_ } from 'ctx-core/html'
+import { url__join } from 'ctx-core/uri'
 import { relement__use } from 'relementjs'
 import { img_ } from 'relementjs/html'
 import { server__relement } from 'relementjs/server'
@@ -12,14 +13,19 @@ import { app_ctx, cwd__set, port__set, src_path__set } from 'relysjs/server'
 import brooke_brodack_logo_jpg from '../../public/assets/images/brooke-brodack-logo.jpg'
 import brooke_brodack_profile_webp from '../../public/assets/images/brooke-brodack-profile.webp'
 import favicon_svg from './icon/favicon.svg.file.js'
+import brooke_brodack_profile_jpg from './public/assets/images/brooke-brodack-profile.jpg'
 const website = 'https://brookebrodack.net'
-const author = 'Brooke Brodack'
 const title = 'Brooke Brodack'
+export const brooke_brodack = <author_T>{
+	'@type': 'Person',
+	'@id': url__join(website, '#Person'),
+	name: 'Brodack Brodack',
+	url: website,
+	image: url__join(website, brooke_brodack_profile_jpg),
+}
 export const site:site_T = {
 	website: website,
-	author,
-	author_url: website,
-	author_img_url: brooke_brodack_profile_webp,
+	author_a1: [brooke_brodack],
 	description: 'YouTubing since 2004',
 	title,
 	favicon: {
