@@ -23,13 +23,13 @@
     "@rappstack/domain--server--auth": "workspace:*",
     "cssnano": "^6.1.2",
     "ctx-core": "^7.1.5",
-    "drizzle-kit": "^0.20.14",
+    "drizzle-kit": "^0.20.15",
     "drizzle-orm": "^0.30.8",
     "elysia": "^1.0.13",
     "esbuild-plugin-esmfile": "^0.2.2",
     "esmcss": "^0.2.5",
     "relementjs": "^0.79.5",
-    "relysjs": "^1.20.12",
+    "relysjs": "^1.20.13",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
