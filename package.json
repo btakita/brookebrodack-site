@@ -23,7 +23,7 @@
     "@rappstack/domain--server--auth": "workspace:*",
     "@rappstack/ui--any": "workspace:*",
     "@rappstack/ui--server": "workspace:*",
-    "cssnano": "^6.1.2",
+    "cssnano": "^7.0.0",
     "ctx-core": "^7.2.2",
     "drizzle-kit": "^0.20.17",
     "drizzle-orm": "^0.30.9",
@@ -32,7 +32,7 @@
     "esmcss": "^0.2.5",
     "marked": "^12.0.2",
     "relementjs": "^0.80.2",
-    "relysjs": "^1.21.11",
+    "relysjs": "^1.21.12",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
