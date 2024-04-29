@@ -1,8 +1,8 @@
 import '../index.css'
-import { type DecoratorBase, Elysia } from 'elysia'
-import { type elysia_context_T, middleware_ } from 'relysjs/server'
+import { Elysia } from 'elysia'
+import { middleware_ } from 'relysjs/server'
 export default middleware_(middleware_ctx=>
-	new Elysia<'', DecoratorBase&elysia_context_T>({
+	new Elysia({
 		name: 'store_routes'
 	}).get(
 		'/store',

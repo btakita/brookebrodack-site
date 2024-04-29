@@ -2,12 +2,12 @@ import '../index.css'
 import { youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtube'
 import { content__doc_html_ } from '@btakita/ui--server--brookebrodack/content'
 import { I } from 'ctx-core/combinators'
-import { type DecoratorBase, Elysia } from 'elysia'
-import { type elysia_context_T, html_response__new, middleware_, rmemo__wait } from 'relysjs/server'
+import { Elysia } from 'elysia'
+import { html_response__new, middleware_, rmemo__wait } from 'relysjs/server'
 import { site } from '../../config.js'
 import { brookebrodack_request_ctx__ensure } from '../../ctx/index.js'
 export default middleware_(middleware_ctx=>
-	new Elysia<'', DecoratorBase&elysia_context_T>({
+	new Elysia({
 		name: 'content_routes'
 	}).get(
 		'/content',
