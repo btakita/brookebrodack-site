@@ -27,7 +27,7 @@
     "ctx-core": "^7.2.3",
     "drizzle-kit": "^0.20.17",
     "drizzle-orm": "^0.30.10",
-    "elysia": "^1.0.15",
+    "elysia": "^1.0.16",
     "esbuild-plugin-esmfile": "^0.2.2",
     "esmcss": "^0.2.5",
     "marked": "^12.0.2",
