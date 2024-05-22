@@ -25,7 +25,7 @@
     "@rappstack/ui--server": "workspace:*",
     "cssnano": "^7.0.1",
     "ctx-core": "^7.2.10",
-    "drizzle-kit": "^0.21.2",
+    "drizzle-kit": "^0.21.3",
     "drizzle-orm": "^0.30.10",
     "elysia": "^1.0.21",
     "esbuild-plugin-esmfile": "^0.2.6",
