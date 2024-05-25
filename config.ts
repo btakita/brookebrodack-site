@@ -43,7 +43,12 @@ export const site:site_T = {
 			rel: 'stylesheet'
 		}
 	],
-	light_and_dark_mode: true,
+	color_scheme_vars: {
+		light: {
+		},
+		dark: {
+		},
+	},
 	google_site_verification: import_meta_env_().PUBLIC_GOOGLE_SITE_VERIFICATION,
 	gtag_id: 'G-E2YTV44HXX',
 	logo_image__new: ($p?:{ class?:string })=>{
