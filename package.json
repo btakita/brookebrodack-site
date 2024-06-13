@@ -32,7 +32,7 @@
     "esmcss": "^0.2.11",
     "marked": "^13.0.0",
     "relementjs": "^0.80.17",
-    "relysjs": "^1.21.47",
+    "relysjs": "^1.21.48",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
