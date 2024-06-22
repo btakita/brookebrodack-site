@@ -24,21 +24,21 @@
     "@rappstack/ui--any": "workspace:*",
     "@rappstack/ui--server": "workspace:*",
     "cssnano": "^7.0.3",
-    "ctx-core": "^7.2.22",
+    "ctx-core": "^7.2.24",
     "drizzle-kit": "^0.22.7",
     "drizzle-orm": "^0.31.2",
-    "elysia": "^1.0.24",
+    "elysia": "^1.0.25",
     "esbuild-plugin-esmfile": "^0.2.8",
     "esmcss": "^0.2.11",
     "marked": "^13.0.0",
-    "relementjs": "^0.80.21",
-    "relysjs": "^1.21.55",
+    "relementjs": "^0.80.23",
+    "relysjs": "^1.21.58",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@btakita/dev-bin": "workspace:*",
     "@ctx-core/preprocess": "^0.1.3",
-    "@rebuildjs/tailwindcss": "^0.10.42",
+    "@rebuildjs/tailwindcss": "^0.10.44",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
     "postcss": "^8.4.38",
@@ -46,6 +46,6 @@
     "tailwindcss": "^3.4.4"
   },
   "peerDependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   }
 }
