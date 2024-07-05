@@ -23,29 +23,29 @@
     "@rappstack/domain--server--auth": "workspace:*",
     "@rappstack/ui--any": "workspace:*",
     "@rappstack/ui--server": "workspace:*",
-    "cssnano": "^7.0.3",
-    "ctx-core": "^7.2.25",
+    "cssnano": "^7.0.4",
+    "ctx-core": "^7.2.27",
     "drizzle-kit": "^0.22.8",
     "drizzle-orm": "^0.31.2",
-    "elysia": "^1.0.25",
-    "esbuild-plugin-esmfile": "^0.2.8",
-    "esmcss": "^0.2.11",
-    "marked": "^13.0.1",
-    "relementjs": "^0.80.24",
-    "relysjs": "^1.21.60",
+    "elysia": "^1.0.27",
+    "esbuild-plugin-esmfile": "^0.2.9",
+    "esmcss": "^0.2.12",
+    "marked": "^13.0.2",
+    "relementjs": "^0.80.26",
+    "relysjs": "^1.21.62",
     "tailwindcss-noscript": "^2.0.1"
   },
   "devDependencies": {
     "@btakita/dev-bin": "workspace:*",
     "@ctx-core/preprocess": "^0.1.3",
-    "@rebuildjs/tailwindcss": "^0.10.45",
+    "@rebuildjs/tailwindcss": "^0.10.48",
     "bun-types": "latest",
     "esbuild-style-plugin": "^1.6.3",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "schema-dts": "^1.1.2",
     "tailwindcss": "^3.4.4"
   },
   "peerDependencies": {
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   }
 }
