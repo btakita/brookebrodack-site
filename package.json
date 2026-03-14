@@ -36,11 +36,11 @@
 		"drizzle-kit": "^0.31.9",
 		"drizzle-orm": "^0.45.1",
 		"elysia": "^1.4.27",
-		"esbuild-plugin-object-store-asset": "^0.0.2",
-		"object-store-asset": "^0.0.1",
 		"esbuild-plugin-esmfile": "^0.2.11",
+		"esbuild-plugin-object-store-asset": "0.0.3",
 		"esmcss": "^0.2.14",
 		"marked": "^17.0.4",
+		"object-store-asset": "^0.0.1",
 		"relementjs": "^0.80.32",
 		"relysjs": "^1.21.74",
 		"tailwindcss-noscript": "^2.0.1"
