@@ -1,3 +1,4 @@
+import { object_store_asset_esbuild_plugin_ } from 'esbuild-plugin-object-store-asset'
 import { preprocess } from '@ctx-core/preprocess'
 import { rebuild_tailwind_plugin_ } from '@rebuildjs/tailwindcss'
 import cssnano from 'cssnano'
@@ -25,11 +26,16 @@ export async function build(config?:relysjs__build_config_T) {
 	})
 	const preprocess_plugin = preprocess_plugin_()
 	const esmfile = esmfile_()
+	const object_store_asset = object_store_asset_esbuild_plugin_({
+		asset_base_url: import_meta_env_().ASSET_BASE_URL,
+		base_path: import_meta_env_().ASSET_BASE_PATH,
+	})
 	await Promise.all([
 		relysjs_browser__build({
 			...config ?? {},
 			publicPath: '/',
 			plugins: [
+				object_store_asset,
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
 				esmfile,
@@ -42,6 +48,7 @@ export async function build(config?:relysjs__build_config_T) {
 			minify: false,
 			publicPath: '/',
 			plugins: [
+				object_store_asset,
 				esmcss_esbuild_plugin_(),
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
