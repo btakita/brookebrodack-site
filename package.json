@@ -2,6 +2,11 @@
 	"name": "@btakita/brookebrodack-site",
 	"module": "index.ts",
 	"type": "module",
+	"exports": {
+		".": "./index.ts",
+		"./jsonld/index.js": "./jsonld/index.ts",
+		"./package.json": "./package.json"
+	},
 	"scripts": {
 		"build": "bun build.ts",
 		"clear": "rm -rf ./dist",
