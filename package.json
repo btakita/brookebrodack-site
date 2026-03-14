@@ -46,7 +46,7 @@
 	"devDependencies": {
 		"@btakita/dev-bin": "^0.1.0",
 		"@ctx-core/preprocess": "^0.2.3",
-		"@rebuildjs/tailwindcss": "^0.10.59",
+		"@rebuildjs/tailwindcss": "^0.11.1",
 		"better-sqlite3": "^12.6.2",
 		"bun-types": "latest",
 		"esbuild-style-plugin": "^1.6.3",

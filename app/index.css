@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@source '../../../../lib/ui--any--brookebrodack/**/*.ts';
+@source '../../../../lib/ui--server--brookebrodack/**/*.ts';
+@source '../../../../lib/ui--browser--brookebrodack/**/*.ts';
+@source '../../../../lib/domain--any--brookebrodack/**/*.ts';
+@source '../../../../lib/domain--server--brookebrodack/**/*.ts';
+@source '../../../../lib/domain--browser--brookebrodack/**/*.ts';
+@config '../../tailwind.config.ts';
+@custom-variant noscript (.noscript &);
 a {
 	text-decoration: underline;
 }
