@@ -1,4 +1,7 @@
 import '../index.css'
+import { relement__use } from 'relementjs'
+import { server__relement } from 'relementjs/server'
+relement__use(server__relement)
 import { youtube_video_a1_ } from '@btakita/domain--server--brookebrodack/youtube'
 import { content__doc_html_ } from '@btakita/ui--server--brookebrodack/content'
 import { I } from 'ctx-core/combinators'

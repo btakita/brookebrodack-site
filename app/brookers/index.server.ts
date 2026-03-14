@@ -1,4 +1,7 @@
 import '../index.css'
+import { relement__use } from 'relementjs'
+import { server__relement } from 'relementjs/server'
+relement__use(server__relement)
 import { brookers__doc_html_ } from '@btakita/ui--server--brookebrodack/brookers'
 import { Elysia } from 'elysia'
 import { html_response__new, middleware_ } from 'relysjs/server'

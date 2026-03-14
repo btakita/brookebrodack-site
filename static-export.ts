@@ -1,12 +1,12 @@
 /**
  * Static export script for Cloudflare Pages deployment.
- * Usage: NODE_ENV=production bun static-export.ts
+ * Expects the server to already be running.
+ * Usage: bun start.ts & sleep 3 && bun static-export.ts
  */
-import { resolve } from 'node:path'
 import { static_export_ } from 'relysjs/server/export'
 import { site } from './config.js'
 static_export_({
-	server_import: resolve('dist/server/index.js'),
+	base_url: process.env.PRERENDER_BASE || 'http://localhost:4101',
 	site_url: site.website,
 	routes: ['/', '/brookers', '/content', '/site', '/store'],
 	extra_routes: ['/robots.txt', '/rss', '/sitemap.xml'],
