@@ -4,7 +4,7 @@ import Database from 'bun:sqlite'
 import { is_entry_file_ } from 'ctx-core/fs'
 import { migrate } from 'drizzle-orm/bun-sqlite/migrator'
 import { dirname, join } from 'node:path'
-import { app_ctx } from 'relysjs/server'
+import { app_ctx } from 'rhonojs/server'
 if (is_entry_file_(import.meta.url), process.argv[1]) {
 	const dir = dirname(new URL(import.meta.url).pathname)
 	const sqlite_db = new Database(join(dir, 'app.db'))

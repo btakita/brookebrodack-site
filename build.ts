@@ -10,13 +10,13 @@ import { esmcss_esbuild_plugin_ } from 'esmcss'
 import { readdir } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import {
-	type relysjs__build_config_T,
-	relysjs__ready__wait,
-	relysjs_browser__build,
-	relysjs_server__build
-} from 'relysjs/server'
+	type rhonojs__build_config_T,
+	rhonojs__ready__wait,
+	rhonojs_browser__build,
+	rhonojs_server__build
+} from 'rhonojs/server'
 import { config__init } from './config.js'
-export async function build(config?:relysjs__build_config_T) {
+export async function build(config?:rhonojs__build_config_T) {
 	config__init()
 	const rebuild_tailwind_plugin = rebuild_tailwind_plugin_({
 		postcss_plugin_a1_: tailwindcss_plugin=>[
@@ -31,7 +31,7 @@ export async function build(config?:relysjs__build_config_T) {
 		base_path: import_meta_env_().ASSET_BASE_PATH,
 	})
 	const build_promises = [
-		relysjs_browser__build({
+		rhonojs_browser__build({
 			...config ?? {},
 			publicPath: '/',
 			plugins: [
@@ -41,7 +41,7 @@ export async function build(config?:relysjs__build_config_T) {
 				esmfile,
 			],
 		}),
-		relysjs_server__build({
+		rhonojs_server__build({
 			...config ?? {},
 			target: 'es2022',
 			external: await server_external_(),
@@ -56,7 +56,7 @@ export async function build(config?:relysjs__build_config_T) {
 			],
 		}),
 	]
-	build_promises.push(relysjs__ready__wait(300_000))
+	build_promises.push(rhonojs__ready__wait(300_000))
 	await Promise.all(build_promises)
 }
 function server_external_() {
@@ -70,6 +70,8 @@ function server_external_() {
 		...file_a1
 			.filter(file=>file !== '@btakita' && file !== '@rappstack')
 			.map(file=>file[0] === '@' ? file + '/*' : file),
+		'hono',
+		'hono/*',
 		'bun',
 		'bun:*'
 	])
@@ -77,7 +79,7 @@ function server_external_() {
 if (is_entry_file_(import.meta.url, process.argv[1])) {
 	build({
 		rebuildjs: { watch: false },
-		relysjs: { app__start: false }
+		rhonojs: { app__start: false }
 	}).then(()=>process.exit(0))
 		.catch(err=>{
 			console.error(err)

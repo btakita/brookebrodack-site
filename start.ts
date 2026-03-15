@@ -1,4 +1,4 @@
-import { app__start } from 'relysjs/server'
+import { app__start } from 'rhonojs/server'
 const mod = await import(
 	process.env.NODE_ENV === 'production'
 		? './dist/server/index.js'

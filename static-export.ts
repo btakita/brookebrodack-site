@@ -3,7 +3,7 @@
  * Expects the server to already be running.
  * Usage: bun start.ts & sleep 3 && bun static-export.ts
  */
-import { static_export_ } from 'relysjs/server/export'
+import { static_export_ } from 'rhonojs/server/export'
 import { site } from './config.js'
 static_export_({
 	base_url: process.env.PRERENDER_BASE || 'http://localhost:4101',
