@@ -82,12 +82,6 @@ export const site:site_T = {
 			active: true
 		},
 		{
-			icon_: fa_instagram_,
-			href: instagram_url,
-			link_title: '@makingandmeaning_brooke',
-			active: true
-		},
-		{
 			icon_: fa_linkedin_,
 			href: linkedin_url,
 			link_title: 'LinkedIn',
