@@ -1,37 +1,39 @@
 ---
-title: "Ai didn’t fire you, your boss did."
-description: "Ai didn’t fire you, your boss did."
+title: "Ai didn't fire you, your boss did."
+description: "Brooke Brodack delivers a passionate critique of corporations using AI as a scapegoat for layoffs driven by greed, not technology."
 date: 2025-06-21
 tags:
   - brooke-brodack
   - youtube
   - technology
+  - politics
+  - self-improvement
 video_url: https://www.youtube.com/watch?v=v45_0nyH1RM
 ---
 
-# Ai didn’t fire you, your boss did.
+# Ai didn't fire you, your boss did.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v45_0nyH1RM" title="Ai didn’t fire you, your boss did." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v45_0nyH1RM" title="Ai didn't fire you, your boss did." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack delivers one of her most passionate and pointed commentaries, arguing that when companies lay off workers and blame AI, the real culprit is corporate greed. She makes the case that AI is being used as a shield, a convenient distraction that allows executives to fill their own pockets while good people lose their jobs. Drawing from a personal story about a friend laid off from Uber with nothing more than a "bummer" as explanation, Brooke exposes the callousness behind the trend.
 
-[00:00:00.720 --> 00:00:08.640] Good morning world! AI didn't fire you, your boss did. They say it was AI, that's all the hype right?
-[00:00:08.640 --> 00:00:15.840] That technology took your job but that's not the truth. AI didn't fire you, your boss did. Let's be
-[00:00:15.840 --> 00:00:22.160] real this isn't about progress, this is about profits. Good people are being laid off not because
-[00:00:22.160 --> 00:00:28.880] they're bad at their job but because executives want more cash. For whatever reason they're using
-[00:00:28.880 --> 00:00:36.000] AI as a shield, a distraction to cover up their own corporate greed so they don't have to say the
-[00:00:36.000 --> 00:00:43.920] truth and come out about how greedy they are. This is not a tech problem, this is a greed problem. AI
-[00:00:43.920 --> 00:00:51.040] should help people not erase them and not replace them. Don't blame the machine, blame the people
-[00:00:51.040 --> 00:00:56.800] pulling the strings. Let's put people over profit and figure out how to use this technology in a way
-[00:00:56.800 --> 00:01:03.920] that truly innovates for all humanity. A friend of mine worked for Uber for six months and was recently
-[00:01:03.920 --> 00:01:12.320] laid off under the disguise of AI took your job and when they laid him off all they said to him was
-[00:01:12.320 --> 00:01:20.960] "Bummer, are you serious right now? It couldn't be more obvious what you're doing trying to fill your own
-[00:01:20.960 --> 00:01:30.320] pockets and caring less than ever about the well-being of humanity as a whole. Your neighbor, your brother,
-[00:01:30.320 --> 00:01:39.200] and your sister, your fellow human being." So let's just paint a scenario here. If technology was ever to
-[00:01:39.200 --> 00:01:46.080] overtake humanity and take over the world it would be these very people right now in this current trend
-[00:01:46.080 --> 00:01:52.800] who are firing good human beings that are good at their job and replacing them with AI just to simply
-[00:01:52.800 --> 00:01:59.680] and quickly fill their own pockets. And here's my warning to them: quantum computing is on the rise
-[00:01:59.680 --> 00:02:07.200] and one day you might find yourself in a situation where your quantum computer fires you.
-[00:02:07.200 --> 00:02:15.200] I just want to say it what goes around comes around and you might not be so welcome back into the circle of
-[00:02:15.200 --> 00:02:24.160] humanity that you so early on denied during this trend of favoring AI and quick cash in your pockets
-[00:02:24.160 --> 00:02:29.280] versus the needs of our fellow human beings.
+The video goes beyond a simple critique to issue a warning: if technology ever truly overtakes humanity, it will be because of the very executives who prioritized quick profits over their fellow human beings. Brooke calls for putting people over profit and figuring out how to use AI in ways that genuinely benefit all of humanity. She closes with a pointed reminder that what goes around comes around, and those who denied the circle of humanity during this trend may not be welcomed back.
+
+This is Brooke at her most direct and socially conscious, channeling real frustration into a message that resonates with anyone who has felt the impact of corporate layoffs disguised as technological progress.
+
+## Key Topics
+
+- AI being used as a scapegoat for corporate layoffs
+- Corporate greed versus genuine technological progress
+- Personal story of a friend laid off from Uber
+- Warning about quantum computing and accountability
+- Putting people over profit in the age of AI
+
+## Notable Moments
+
+- [0:00](https://www.youtube.com/watch?v=v45_0nyH1RM&t=0s) - "AI didn't fire you, your boss did. They say it was AI, that's all the hype right?"
+- [0:22](https://www.youtube.com/watch?v=v45_0nyH1RM&t=22s) - "This is not a tech problem, this is a greed problem"
+- [1:03](https://www.youtube.com/watch?v=v45_0nyH1RM&t=63s) - Story about a friend laid off from Uber with just "bummer" as a response
+- [1:59](https://www.youtube.com/watch?v=v45_0nyH1RM&t=119s) - Warning: "Your quantum computer might fire you one day"
+
+[Download full transcript](/transcripts/v45_0nyH1RM.txt)

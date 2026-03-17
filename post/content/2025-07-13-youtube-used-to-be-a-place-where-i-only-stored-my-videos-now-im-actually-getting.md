@@ -1,6 +1,6 @@
 ---
-title: "YouTube used to be a place where I only stored my videos. Now I’m actually getting views."
-description: "YouTube used to be a place where I only stored my videos. Now I’m actually getting views."
+title: "YouTube used to be a place where I only stored my videos. Now I'm actually getting views."
+description: "Brooke Brodack reflects on YouTube evolving from a video storage platform to a place where her content is actually being seen by viewers."
 date: 2025-07-13
 tags:
   - brooke-brodack
@@ -9,10 +9,22 @@ tags:
 video_url: https://www.youtube.com/watch?v=KvRzIH0soYY
 ---
 
-# YouTube used to be a place where I only stored my videos. Now I’m actually getting views.
+# YouTube used to be a place where I only stored my videos. Now I'm actually getting views.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KvRzIH0soYY" title="YouTube used to be a place where I only stored my videos. Now I’m actually getting views." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KvRzIH0soYY" title="YouTube used to be a place where I only stored my videos. Now I'm actually getting views." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack reflects on the shift in her YouTube experience, from using the platform purely as a place to store her videos to actually seeing real viewership numbers. With views ranging from 200 to over a thousand on her regular videos, Brooke is thrilled that people are genuinely discovering and watching her content.
 
-[00:00:00.000 --> 00:00:14.980] Other than just having YouTube be a place where I can like store my content, that people are actually now seeing my content, even though I'm only getting like 200 to 600 something, maybe a thousand views on my actual videos, but...
+This honest take on the creator journey resonates with anyone who has uploaded content into the void and wondered if anyone would ever see it. Brooke's story is a reminder that consistent effort on YouTube can eventually break through the noise.
+
+## Key Topics
+
+- The evolution from YouTube as storage to an active audience platform
+- Growing viewership numbers as a small creator
+- The satisfaction of content being seen and appreciated
+
+## Notable Moments
+
+- [0:00](https://www.youtube.com/watch?v=KvRzIH0soYY&t=0) Brooke describes YouTube shifting from a storage platform to a viewership platform for her
+
+[Download full transcript](/transcripts/KvRzIH0soYY.txt)

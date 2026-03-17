@@ -1,16 +1,14 @@
 ---
 title: "Breaking my 35 hour dry fast"
-description: "Breaking my 35 hour dry fast"
+description: "Brooke documents the moment she breaks her first-ever 35-hour dry fast, sharing her surprisingly energetic state and reflections on the experience."
 date: 2026-02-20
 tags:
   - brooke-brodack
   - youtube
   - fasting
-  - sobriety
-  - cooking
-  - technology
+  - health
+  - healing
   - self-improvement
-  - art
 video_url: https://www.youtube.com/watch?v=xUp0h5dq9gQ
 ---
 
@@ -18,19 +16,23 @@ video_url: https://www.youtube.com/watch?v=xUp0h5dq9gQ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xUp0h5dq9gQ" title="Breaking my 35 hour dry fast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack captures the intimate moment of breaking her first-ever dry fast after approximately 35 hours without food or water. Starting with a small sip of water, she transitions from a dry fast into a water fast, sharing her honest assessment of the experience. What stands out most is her surprise at how good she feels -- noting only the "tiniest little headache" and admitting she is not actually hungry or thirsty at all.
 
-[00:00:00.000 --> 00:00:07.320] I believe 35 hours if not more. I'm gonna start with a little bit of water. So now it's becoming a water fast.
-[00:00:07.320 --> 00:00:21.140] Fast officially broken. Honestly like I feel great. The only reason I'm breaking this fast is because
-[00:00:21.140 --> 00:00:24.940] I've never dry fasted before and
-[00:00:24.940 --> 00:00:31.660] I don't know. I feel like I need to do a little bit more fruit fasting before I dive into a really long
-[00:00:31.660 --> 00:00:37.280] dry fast and a little bit more water fasting before I dive into a really long dry fast but
-[00:00:37.280 --> 00:00:43.580] it was a really cool experience. I think it's incredible that right now I'm at 35 hours without
-[00:00:43.580 --> 00:00:51.820] food or water if not a little bit more and all I have is like the tiniest little headache that's come
-[00:00:51.820 --> 00:00:58.140] on like the smallest little headache and um otherwise I have so much energy. Like I'm not
-[00:00:58.140 --> 00:01:04.940] actually thirsty. I'm not actually hungry at all. I'm just breaking this fast out of fear and like
-[00:01:04.940 --> 00:01:10.300] safety and also the unknown because I don't have a community right now around me to help me go through
-[00:01:10.300 --> 00:01:18.360] this dry fast and to like guide me through it safely. So but yeah it was a really cool experience and I'm
-[00:01:18.360 --> 00:01:25.720] going to be sipping on water for the next couple of hours to get my body accustomed to drinking again
-[00:01:25.720 --> 00:01:34.820] and now it's like a water fast. I'll be water fasting and eventually we'll add fruits and vegetables again.
-[00:01:34.820 --> 00:01:37.820] So yay!
+In a moment of raw vulnerability, Brooke acknowledges that she is breaking the fast primarily out of fear and safety concerns rather than physical need, particularly because she lacks a supportive community to guide her through an extended dry fast. She outlines her plan to gradually reintroduce water over the next few hours before eventually adding fruits and vegetables back into her diet. The video serves as both a personal milestone and an encouraging glimpse into the fasting journey for viewers curious about the practice.
+
+## Key Topics
+
+- Breaking a 35-hour dry fast for the first time -- the physical and emotional experience
+- The difference between dry fasting and water fasting
+- Importance of community support during extended fasting
+- Transitioning from dry fast to water fast to reintroducing whole foods
+
+## Notable Moments
+
+- **[0:00]** "I believe 35 hours if not more. I'm gonna start with a little bit of water."
+- **[0:07]** "Fast officially broken. Honestly, I feel great."
+- **[0:44]** "I have so much energy. I'm not actually thirsty. I'm not actually hungry at all."
+- **[1:04]** Admits she is "breaking this fast out of fear and safety" without a community to guide her
+- **[1:18]** Plans to sip water for hours before gradually reintroducing fruits and vegetables
+
+[Download full transcript](/transcripts/xUp0h5dq9gQ.txt)

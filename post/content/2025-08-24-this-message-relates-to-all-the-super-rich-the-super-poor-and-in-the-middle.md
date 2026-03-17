@@ -1,13 +1,13 @@
 ---
 title: "This message relates to ALL the SUPER RICH, the SUPER POOR and in the MIDDLE."
-description: "This message relates to ALL the SUPER RICH, the SUPER POOR and in the MIDDLE."
+description: "Brooke Brodack shares her excitement about a universal message she is developing -- one that speaks to the rich, the poor, and everyone in between about discovering real wealth beyond money."
 date: 2025-08-24
 tags:
   - brooke-brodack
   - youtube
-  - live
-  - cooking
+  - spirituality
   - self-improvement
+  - meditation
 video_url: https://www.youtube.com/watch?v=3NnVT7CCBYI
 ---
 
@@ -15,32 +15,31 @@ video_url: https://www.youtube.com/watch?v=3NnVT7CCBYI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3NnVT7CCBYI" title="This message relates to ALL the SUPER RICH, the SUPER POOR and in the MIDDLE." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack is buzzing with genuine excitement about a message she feels forming within her -- one powerful enough to reach not just average people, but the super rich and the super poor alike. She is clear that her excitement is not about gaining wealth or attention from billionaires. Instead, she wants to show them what real currency is, what real wealth looks like beyond dollars and trillions.
 
-[00:00:00.000 --> 00:00:03.240] I'm really excited because I feel like a book is cooking within.
-[00:00:03.240 --> 00:00:12.600] I mean, I'm genuinely excited. Genuinely really excited because my message is relevant,
-[00:00:12.600 --> 00:00:19.300] not just to the average human being, but even to the rich and the super, super rich.
-[00:00:19.300 --> 00:00:23.880] And I'm not excited because I might be getting the attention of the super rich and maybe getting
-[00:00:23.880 --> 00:00:31.660] some of their money. I'm excited because I want to show them the real wealth of this life,
-[00:00:31.660 --> 00:00:39.760] what real currency is. And when I say I don't want their money, I don't want their billions and
-[00:00:39.760 --> 00:00:47.460] trillions of dollars, I really mean it. And that puts me in a place in my mind and in my being of,
-[00:00:47.820 --> 00:00:56.340] wow, talk about pure potential energy. Like what could we potentially be facing as human beings
-[00:00:56.340 --> 00:01:07.140] if we really truly realized that dollar currency, money currency, isn't everything. It's not the only
-[00:01:07.140 --> 00:01:14.960] currency. And like, we know it, but like, what if we realized it? What if we had a realization about it?
-[00:01:15.100 --> 00:01:20.680] Like really, real, really realized it and then lived that.
-[00:01:20.680 --> 00:01:32.760] This is powerful. This message that I'm working on now. Yeah. It could genuinely unite everyone.
-[00:01:32.760 --> 00:01:39.440] Can you imagine if the rich could receive this message the same way that the average could receive
-[00:01:39.440 --> 00:01:45.400] this message or all of them could receive this message of stepping into the unknown, finding your
-[00:01:45.400 --> 00:01:51.200] pure potential energy and your individuality and what uniqueness you can bring to the world.
-[00:01:51.200 --> 00:02:00.460] If, if these rich could just step down, step away or step up in any direction away from their busyness,
-[00:02:01.020 --> 00:02:10.580] take a step back, forward, any other direction into the unknown, into their pure potential energy.
-[00:02:10.580 --> 00:02:11.880] Wow. Think about it.
-[00:02:12.420 --> 00:02:20.620] This is beyond John Lennon's imagine. Because as non-egotistical as his message was, it still went mainstream.
-[00:02:20.620 --> 00:02:28.620] Yeah. Imagine all the people living together as one, but like he didn't go beyond that to this message.
-[00:02:28.620 --> 00:02:34.040] Imagine everyone living as one because they discovered the one within.
-[00:02:34.420 --> 00:02:38.420] And now they can be a stronger part of their community.
-[00:02:38.420 --> 00:02:42.180] They can bring their true uniqueness to the world.
-[00:02:42.180 --> 00:02:44.700] Their true self.
-[00:02:44.700 --> 00:02:47.180] Their true wealth.
-[00:02:47.180 --> 00:02:51.780] Thrival isn't survival. It's legit thrival.
-[00:02:51.780 --> 00:03:00.060] It's not creating corrupt systems that harm 8 billion people and viewing yourself as the only wealthy one.
+The message centers on stepping into the unknown and discovering pure potential energy and individuality. Brooke frames it as going beyond John Lennon's "Imagine" -- while Lennon envisioned people living together as one, Brooke pushes further: imagine everyone living as one because they discovered the one within. From that place of self-knowledge, each person can bring their true uniqueness, their true wealth, to the world and their community.
+
+Brooke draws a sharp distinction between survival and what she calls "thrival" -- genuine thriving that does not require corrupt systems harming eight billion people. She envisions a world where the wealthy step away from their busyness and into the unknown alongside everyone else.
+
+## Key Topics
+
+- A universal message that transcends wealth and class
+- Real currency versus monetary currency
+- Pure potential energy and discovering individuality
+- Going beyond John Lennon's "Imagine" vision
+- The difference between survival and genuine thrival
+- Challenging the one percent to step into the unknown
+
+## Notable Moments
+
+- **00:00** - Feeling a book forming within and genuine excitement
+- **00:19** - The message is relevant to the rich, poor, and middle alike
+- **00:31** - Wanting to show the super rich what real wealth is
+- **00:56** - Pure potential energy as a concept for all people
+- **01:07** - What if we truly realized money is not the only currency
+- **01:32** - This message could genuinely unite everyone
+- **02:00** - Inviting the rich to step into the unknown
+- **02:20** - Going beyond John Lennon's "Imagine" to discovering the one within
+- **02:51** - Thrival versus survival and corrupt systems
+
+[Download full transcript](/transcripts/3NnVT7CCBYI.txt)

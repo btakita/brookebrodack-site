@@ -1,12 +1,12 @@
 ---
 title: "Small creators and small businesses should thrive too."
-description: "Small creators and small businesses should thrive too."
+description: "Brooke Brodack shares her vision for a community-driven platform that connects small content creators with small businesses, drawing from her own experience as the first YouTuber to land a mainstream media deal."
 date: 2025-08-26
 tags:
   - brooke-brodack
   - youtube
   - content-creation
-  - technology
+  - self-improvement
 video_url: https://www.youtube.com/watch?v=Vo_FsDffGtw
 ---
 
@@ -14,32 +14,27 @@ video_url: https://www.youtube.com/watch?v=Vo_FsDffGtw
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vo_FsDffGtw" title="Small creators and small businesses should thrive too." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack opens up about a pivotal moment from her early YouTube career around 2006-2007, when she became the first YouTuber to land a mainstream media deal and was flown out to Hollywood. She recalls being warned at a cafe that nobody there liked her -- not because of who she was, but because she had bypassed the traditional gatekeeping system through the luck of early internet timing. That resentment toward homegrown creators, Brooke argues, still lingers today.
 
-[00:00:00.320 --> 00:00:11.220] I remember way back in 2006 or 2007 or something like that when I was the first YouTuber to get the mainstream media deal and they flew me out to Hollywood.
-[00:00:11.220 --> 00:00:22.140] And literally a hot second into arriving in Hollywood way back then I was sitting at a cafe with I'm not gonna say whom and she just randomly looked around and said to me,
-[00:00:22.140 --> 00:00:44.640] you know nobody here likes you like essentially so be careful. And that's because I essentially got my way into Hollywood through the luck of the draw right like I never graduated I didn't work hard to become a content creator or an actor an actress or director just kind of aligned with the technology of the time and got lucky.
-[00:00:44.640 --> 00:00:53.400] And I'm telling you this story right now because I feel like even though we're in a world where homegrown creators are making it big and they're millionaires right?
-[00:00:53.400 --> 00:01:02.240] They're sort of in it now in Hollywood. But I think in a way that resentment is sort of still kind of there and living.
-[00:01:02.240 --> 00:01:08.960] I don't think that that way of thinking about homegrown creators is entirely gone.
-[00:01:08.960 --> 00:01:15.160] And I think that that is where this weird pressure and this uncomfortable feeling comes from.
-[00:01:15.160 --> 00:01:25.840] When you're a small creator and you try to imagine or try to work hard to make it big or maybe you've made it big and you're in this sort of uncomfortable space right now of do I really belong here?
-[00:01:26.580 --> 00:01:35.540] And this is why I love this idea of creating a sort of stepping stone to YouTube for small creators and small businesses.
-[00:01:35.540 --> 00:01:39.700] Pay what you can community model.
-[00:01:39.700 --> 00:01:42.180] Businesses can pay what they can.
-[00:01:42.180 --> 00:01:47.160] Creators that probably wouldn't be getting paid anything for their content are getting something.
-[00:01:47.160 --> 00:01:52.580] Which motivates them to feel more free and create content, create better content.
-[00:01:53.340 --> 00:02:04.680] And then creativity truly thrives because YouTube, or sorry, content creators aren't creating content with this heavy weight on their shoulders of,
-[00:02:04.680 --> 00:02:08.500] ugh, one day I'll finally get 3 million views.
-[00:02:08.500 --> 00:02:10.020] One day I'll be polished.
-[00:02:10.020 --> 00:02:13.620] This is bringing us back to the present moment and saying,
-[00:02:13.620 --> 00:02:19.660] wow, I can be appreciated fully and wholeheartedly for where I'm at now in my content creation journey.
-[00:02:20.360 --> 00:02:26.720] And shake off all that negativity surrounding, oh my god, I'm never going to get there.
-[00:02:26.720 --> 00:02:28.420] It feels like I'm never going to get there.
-[00:02:28.420 --> 00:02:34.240] Well, here's a very real stepping stone and a community that could support you along that journey.
-[00:02:34.240 --> 00:02:43.960] I think that as small as this website would be, if you compare it to YouTube or these other behemoths,
-[00:02:44.380 --> 00:02:48.360] I think it could be so important and needed in the creative space,
-[00:02:48.360 --> 00:02:53.940] as a place where creativity, community, and connection can really thrive.
-[00:02:53.940 --> 00:02:58.940] The world of content creation right now just feels so cold and algorithmic and corporate.
-[00:02:58.940 --> 00:02:59.120] Thank you.
-[00:02:59.120 --> 00:02:59.120] Thank you.
+This personal story sets the stage for Brooke's larger vision: a pay-what-you-can community platform that serves as a stepping stone between small creators and YouTube's massive ecosystem. The idea is simple but powerful -- small businesses that cannot afford big influencers get affordable, authentic advertising, while small creators who would otherwise earn nothing from their content receive meaningful compensation. Brooke believes this would liberate creators from the crushing pressure of chasing millions of views and instead let them be appreciated for where they are in their journey right now.
+
+The world of content creation, Brooke observes, has become cold, algorithmic, and corporate. Her proposed model would bring creativity, community, and genuine human connection back to the center of the creator economy.
+
+## Key Topics
+
+- Brooke's experience as the first YouTuber to get a mainstream media deal
+- The lingering resentment toward homegrown creators in Hollywood
+- A pay-what-you-can community model for small creators and businesses
+- Freeing creators from the pressure of chasing viral success
+- Bringing warmth and authenticity back to content creation
+
+## Notable Moments
+
+- **00:00** - Recalling the 2006-2007 Hollywood experience and the warning she received
+- **00:44** - How the resentment toward homegrown creators persists today
+- **01:26** - Introducing the stepping stone platform concept
+- **01:39** - The pay-what-you-can community model explained
+- **02:04** - How the platform would remove creative pressure
+- **02:43** - The world of content creation feels cold and algorithmic
+
+[Download full transcript](/transcripts/Vo_FsDffGtw.txt)

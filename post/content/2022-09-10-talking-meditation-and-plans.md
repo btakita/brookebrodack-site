@@ -1,17 +1,16 @@
 ---
 title: "Talking meditation and plans"
-description: "Talking meditation and plans"
+description: "Brooke Brodack reflects on her meditation practice as a new mother, sitting in a field of wildflowers in Texas while discussing mindfulness, Sadhguru's Save Soil movement, and her search for land."
 date: 2022-09-10
 tags:
   - brooke-brodack
   - youtube
   - meditation
   - yoga
-  - music
+  - spirituality
   - nature
   - family
-  - technology
-  - art
+  - self-improvement
 video_url: https://www.youtube.com/watch?v=sBELH1-3llA
 ---
 
@@ -19,20 +18,27 @@ video_url: https://www.youtube.com/watch?v=sBELH1-3llA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sBELH1-3llA" title="Talking meditation and plans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack sits in a field of wildflowers in Texas and opens up about the challenges of maintaining a meditation practice as a new mother. One year postpartum, she candidly shares that her practice has weakened and her monkey mind makes it hard to sit still for even five minutes. Rather than forcing a meditation session, she decides to film a video talking through her thoughts instead -- a refreshingly honest approach to mindfulness content.
 
-[00:00:00.000 --> 00:00:19.000] It's so beautiful out here. I'm just surrounded by flowers, bees, plants. I saw a snake before I came in here. It's so beautiful.
-[00:00:21.000 --> 00:00:30.000] My meditation practice has definitely weakened since becoming a mother, but now I'm a year postpartum.
-[00:00:30.000 --> 00:00:45.000] Today I want to meditate, but I feel like I have a monkey mind, such a monkey mind that I can't even focus enough to meditate.
-[00:00:46.000 --> 00:00:52.000] Today I was like, alright, I'll film a little video talking instead of meditating.
-[00:00:52.000 --> 00:01:07.000] I could barely sit for five minutes, but I hope that the more I do yoga and the more I meditate, if I keep up this daily morning practice,
-[00:01:08.000 --> 00:01:16.000] that I will deepen my sense, I'll deepen my mindfulness and my sense of peace and calm.
-[00:01:16.000 --> 00:01:22.000] And, cause there's a lot on my mind right now.
-[00:01:23.000 --> 00:01:27.000] I'm a mother, I'm a year postpartum, I want to tell my birth story.
-[00:01:27.000 --> 00:01:32.000] I want to talk about the safe soil movement that Sadguru has going on.
-[00:01:32.000 --> 00:01:34.000] Because I think it's super important.
-[00:01:34.000 --> 00:01:44.000] That's a part of the reason why I've been looking for land now for, since October, when I learned how to build with aircrete.
-[00:01:45.000 --> 00:01:47.000] When I took a course in aircrete.
-[00:01:47.000 --> 00:01:56.000] But today, I'm, this morning, I'm just sitting in a field of wildflowers in Texas.
-[00:01:56.000 --> 00:02:03.000] And the birds are singing, and it's beautiful.
-[00:02:03.000 --> 00:02:11.520] I'll just show you.
+The conversation flows naturally from meditation to the many things on Brooke's mind, including her desire to tell her birth story, her support for Sadhguru's Save Soil movement, and her ongoing search for land after learning to build with aircrete. The backdrop of singing birds and blooming wildflowers adds a layer of natural beauty that contrasts with the internal restlessness she describes.
+
+Brooke expresses hope that committing to a daily morning practice of yoga and meditation will deepen her mindfulness and sense of calm over time. It is a vulnerable and grounding video that resonates with anyone who has struggled to maintain a spiritual practice through major life changes.
+
+## Key Topics
+
+- Challenges of maintaining a meditation practice as a new mother
+- The concept of monkey mind and working through mental restlessness
+- Sadhguru's Save Soil movement and its personal significance
+- Searching for land and learning to build with aircrete
+- The beauty of sitting in nature as a form of meditation itself
+
+## Notable Moments
+
+- **0:00** - "It's so beautiful out here. I'm just surrounded by flowers, bees, plants."
+- **0:21** - "My meditation practice has definitely weakened since becoming a mother"
+- **0:30** - Describes having such a monkey mind she can barely sit for five minutes
+- **1:23** - "I'm a mother, I'm a year postpartum, I want to tell my birth story"
+- **1:27** - Discusses Sadhguru's Save Soil movement
+- **1:47** - "This morning, I'm just sitting in a field of wildflowers in Texas"
+
+[Download full transcript](/transcripts/sBELH1-3llA.txt)

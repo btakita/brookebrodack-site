@@ -1,12 +1,13 @@
 ---
 title: "How to tell a good story"
-description: "How to tell a good story"
+description: "Brooke Brodack shares storytelling wisdom learned in India about how to structure a compelling narrative that keeps people engaged."
 date: 2025-06-23
 tags:
   - brooke-brodack
   - youtube
   - india
-  - art
+  - content-creation
+  - self-improvement
 video_url: https://www.youtube.com/watch?v=K56Q30fkx7A
 ---
 
@@ -14,15 +15,20 @@ video_url: https://www.youtube.com/watch?v=K56Q30fkx7A
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K56Q30fkx7A" title="How to tell a good story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack shares a storytelling technique she learned during her time in India. The method involves starting at one point, taking the audience far out on a tangent where they feel almost lost but remain engaged, and then bringing everything back to connect the beginning and ending in a way that feels perfectly articulated. It is a structure that rewards patient listeners with a satisfying payoff.
 
-[00:00:00.000 --> 00:00:02.360] - That I learned in India, you start the story here.
-[00:00:02.360 --> 00:00:03.280] - Right.
-[00:00:03.280 --> 00:00:06.640] - You come way out here and people are like lost,
-[00:00:06.640 --> 00:00:08.200] but they're like still following.
-[00:00:08.200 --> 00:00:09.040] - Okay.
-[00:00:09.040 --> 00:00:10.800] - And then like you bring it back
-[00:00:10.800 --> 00:00:12.240] and then you like connect it.
-[00:00:12.240 --> 00:00:13.080] - Cool.
-[00:00:13.080 --> 00:00:13.920] - Like the beginning and the ending
-[00:00:13.920 --> 00:00:15.000] and you articulate it perfectly.
+This brief lesson in narrative craft reveals Brooke's thoughtful approach to communication and content creation. Drawing from her experiences abroad, she demonstrates that great storytelling is not about keeping things simple and linear, but about creating a journey that trusts the audience to follow along even when the path seems to wander.
+
+## Key Topics
+
+- Storytelling technique learned in India
+- Narrative structure: diverge, engage, reconnect
+- The art of connecting beginning and ending
+- Keeping audiences engaged through tangents
+
+## Notable Moments
+
+- [0:00](https://www.youtube.com/watch?v=K56Q30fkx7A&t=0s) - "You start the story here, you come way out here and people are like lost, but they're still following"
+- [0:09](https://www.youtube.com/watch?v=K56Q30fkx7A&t=9s) - "You bring it back and then you connect it... the beginning and the ending"
+
+[Download full transcript](/transcripts/K56Q30fkx7A.txt)

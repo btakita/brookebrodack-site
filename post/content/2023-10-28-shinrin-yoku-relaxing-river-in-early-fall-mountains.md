@@ -1,14 +1,15 @@
 ---
 title: "Shinrin-yoku relaxing river in early fall mountains"
-description: "I’ve been wanting to make a shinrin-yoku video for about two years now. I filmed one in NH two years ago at the Merrimack river and it was too long I never got around to editing and posting it. But fi"
+description: "Brooke Brodack shares a peaceful shinrin-yoku (forest bathing) experience along a mountain river during early fall, featuring calming natural sounds and serene autumn scenery."
 date: 2023-10-28
 tags:
   - brooke-brodack
   - youtube
-  - travel
-  - music
+  - meditation
   - nature
-  - technology
+  - health
+  - healing
+  - sound-healing
 video_url: https://www.youtube.com/watch?v=RA-kcqjLuaU
 ---
 
@@ -16,18 +17,23 @@ video_url: https://www.youtube.com/watch?v=RA-kcqjLuaU
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RA-kcqjLuaU" title="Shinrin-yoku relaxing river in early fall mountains" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack fulfills a two-year dream with this shinrin-yoku video, bringing viewers into the heart of the autumnal mountains for a deeply relaxing forest bathing experience. The Japanese practice of shinrin-yoku — literally "forest bathing" — involves immersing oneself in the natural atmosphere of a forest, and Brooke captures it beautifully with flowing river sounds and fall foliage as the backdrop.
 
-[00:00:00.000 --> 00:00:02.000] *Painless music*
-[00:00:30.000 --> 00:00:32.000] *Painless music*
-[00:01:00.000 --> 00:01:02.000] *Painless music*
-[00:01:30.000 --> 00:01:32.000] *Painless music*
-[00:02:00.000 --> 00:02:02.000] *Painless music*
-[00:02:30.000 --> 00:02:32.000] *Painless music*
-[00:03:00.000 --> 00:03:02.000] *Painless music*
-[00:03:30.000 --> 00:03:59.980] Thank you.
-[00:04:00.000 --> 00:04:29.980] Thank you.
-[00:04:30.000 --> 00:04:59.980] Thank you.
-[00:05:00.000 --> 00:05:29.980] Thank you.
-[00:05:30.000 --> 00:05:59.980] Thank you.
-[00:06:00.000 --> 00:06:29.980] Thank you.
+After previously filming a shinrin-yoku session at the Merrimack River in New Hampshire that never made it to post due to its length, Brooke finally delivers a polished version that strikes the right balance. The video is a meditative escape, featuring nothing but the gentle sounds of a mountain river and the peaceful visuals of early autumn in the mountains.
+
+This is Brooke at her most contemplative, channeling her spiritual practice into content that viewers can use for relaxation, meditation, or simply to decompress from the noise of daily life.
+
+## Key Topics
+
+- Shinrin-yoku (forest bathing) practice
+- Mountain river relaxation and nature sounds
+- Early fall foliage in the mountains
+- Mindfulness and meditative content
+
+## Notable Moments
+
+- [00:00:00] Opening with peaceful river and forest sounds
+- [00:03:00] Deep immersion in the mountain soundscape
+- [00:06:00] Closing moments of the forest bathing session
+
+[Download full transcript](/transcripts/RA-kcqjLuaU.txt)

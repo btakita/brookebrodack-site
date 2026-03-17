@@ -1,13 +1,14 @@
 ---
 title: "Aaj Kya Scene Hain? (Whats the Scene?) Philadelphia Raga (turn on caption for Lyric video)"
-description: "I am known according to the NY times to be the first youtuber to get a mainstream development deal with NBC and carson daly way back in 2005.  I see myself as the roots of youtube and for me story is "
+description: "Brooke Brodack presents a music video for 'Aaj Kya Scene Hain,' a Philadelphia Raga blending Indian and Western musical influences with what she calls divine editing."
 date: 2021-12-17
 tags:
   - brooke-brodack
   - youtube
-  - spirituality
   - music
-  - technology
+  - india
+  - spirituality
+  - art
 video_url: https://www.youtube.com/watch?v=X_U1h2zdvdk
 ---
 
@@ -15,31 +16,25 @@ video_url: https://www.youtube.com/watch?v=X_U1h2zdvdk
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X_U1h2zdvdk" title="Aaj Kya Scene Hain? (Whats the Scene?) Philadelphia Raga (turn on caption for Lyric video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack shares a music video that represents the creative fusion of her years spent in the Indian underground music and art scene. Titled "Aaj Kya Scene Hain?" (What's the Scene?), this Philadelphia Raga blends Indian musical traditions with Western influences, reflecting Brooke's unique cross-cultural artistic perspective. The video is best experienced with captions turned on to follow the lyrics, which weave together themes of consciousness, love, and the wild beauty of life.
 
-[00:00:00.000 --> 00:00:07.000] *music*
-[00:00:30.000 --> 00:00:37.000] *music*
-[00:00:37.000 --> 00:00:42.000] *music*
-[00:00:42.000 --> 00:00:47.000] *music*
-[00:00:47.000 --> 00:00:52.000] *music*
-[00:00:52.000 --> 00:00:56.000] *music*
-[00:00:56.000 --> 00:01:06.000] *music*
-[00:01:06.000 --> 00:01:10.000] *music*
-[00:01:10.000 --> 00:01:16.000] *music*
-[00:01:16.000 --> 00:01:20.000] *music*
-[00:01:20.000 --> 00:01:24.000] *music*
-[00:01:24.000 --> 00:01:50.000] *music*
-[00:01:50.000 --> 00:01:52.000] *music*
-[00:01:52.000 --> 00:01:56.000] *music*
-[00:01:56.000 --> 00:02:00.000] *music*
-[00:02:00.000 --> 00:02:10.000] *music*
-[00:02:10.000 --> 00:02:12.000] *music*
-[00:02:12.000 --> 00:02:14.000] *music*
-[00:02:14.000 --> 00:02:16.000] *music*
-[00:02:16.000 --> 00:02:40.440] I don't know what the fascination is. I'm drunk with John Wesley Harden. I'm like the least of guys. I'm not afraid of this. I'm fine with the murder. Can't stop talking about sapphires. No one can see no truth.
-[00:02:41.940 --> 00:02:50.940] No standing on some barbeds. Maybe you couldn't come my way, but I'll see you out here as mad.
-[00:02:50.940 --> 00:03:08.880] It's a wild country. Let's be dancing on Sunday morning. Sunrise is the white sun. Oh, honey, you're so unforgiving. Oh, honey, I'll leave it, love it.
-[00:03:08.880 --> 00:03:22.440] Oh, honey, he's a naked guy. I'm thinking about one another. I'm thinking about the leaves of consciousness. I don't have no peace of love yet.
-[00:03:23.880 --> 00:03:35.880] I'm thinking about the leaves of consciousness. You say you can never change. Oh, honey, it's a little bit. You say she can never change. Oh, honey, it's a little bit.
-[00:03:35.880 --> 00:03:37.880] Oh
-[00:04:05.880 --> 00:04:07.880] Oh
+This piece holds special significance in Brooke's creative journey. As someone recognized by the New York Times as the first YouTuber to land a mainstream development deal with NBC and Carson Daly back in 2005, Brooke sees herself as part of YouTube's roots. After spending nine years traveling through India, teaching storytelling and content creation at universities, she re-emerges with this work that embodies what she calls "divine editing" -- a process where the music and video sync in harmony without deliberate synchronization, as if guided by a higher power.
+
+The lyrics touch on themes of fascination, consciousness, and transformation, set against a backdrop of shifting musical textures that move from contemplative to energetic. It is a deeply personal artistic statement from someone bridging two worlds.
+
+## Key Topics
+
+- Original music blending Indian raga traditions with Western songwriting
+- The concept of "divine editing" where music and video sync naturally
+- Brooke's nine years in the Indian underground music and art scene
+- Cross-cultural artistic expression and storytelling through music
+- Themes of consciousness, love, and personal transformation in the lyrics
+
+## Notable Moments
+
+- **0:00** - Opening instrumental raga section
+- **2:16** - Vocals begin with evocative, stream-of-consciousness lyrics
+- **2:51** - "It's a wild country, let's be dancing on Sunday morning"
+- **3:09** - "I'm thinking about the leaves of consciousness"
+
+[Download full transcript](/transcripts/X_U1h2zdvdk.txt)

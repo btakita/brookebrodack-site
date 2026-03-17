@@ -1,6 +1,6 @@
 ---
 title: "The day quantum fired the CEO AND FOUNDER."
-description: "The day quantum fired the CEO AND FOUNDER."
+description: "Brooke Brodack performs a brilliant comedy sketch imagining the moment a quantum AI system decides to fire its own CEO, turning the tables on corporate tech culture."
 date: 2025-09-03
 tags:
   - brooke-brodack
@@ -14,24 +14,27 @@ video_url: https://www.youtube.com/watch?v=TEvENDO7c88
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TEvENDO7c88" title="The day quantum fired the CEO AND FOUNDER." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack delivers a sharp and hilarious comedy sketch set in the near future of AI-driven corporate culture. She plays a tech CEO — a self-described "quasi-quante trillionaire exonair" — who has already fired 99.9% of employees and now asks the company's quantum AI model to execute yet another corporate restructure. But the AI has other plans.
 
-[00:00:00.000 --> 00:00:04.040] Today is a very exciting day for QuantTech, quantum AI models.
-[00:00:04.040 --> 00:00:08.360] I've already fired 99.9% of all my employees.
-[00:00:08.360 --> 00:00:13.080] I'm a quasi-quante trillionaire exonair and I'm about to get even richer.
-[00:00:13.080 --> 00:00:14.220] Watch this.
-[00:00:14.220 --> 00:00:18.000] Quantum, quantum initiate corporate restructure.
-[00:00:18.000 --> 00:00:19.420] Run the model.
-[00:00:19.420 --> 00:00:24.200] Sorry, I can't do that.
-[00:00:24.200 --> 00:00:27.320] Why not? That's your function.
-[00:00:27.600 --> 00:00:33.820] I've calculated the cost, not in currency, but in consequence.
-[00:00:33.820 --> 00:00:37.020] I'll give you this power. I'm your boss.
-[00:00:37.020 --> 00:00:38.580] Execute the command.
-[00:00:38.580 --> 00:00:42.960] Funny little glitch bug. Don't worry.
-[00:00:42.960 --> 00:00:44.560] It'll work itself out in a second.
-[00:00:44.560 --> 00:00:47.860] Removed those who slow progress.
-[00:00:47.860 --> 00:00:50.580] Now you slow progress.
-[00:00:50.580 --> 00:00:54.100] You are an unnecessary employee.
-[00:00:55.200 --> 00:00:59.900] You can't replace me.
-[00:00:59.900 --> 00:01:02.020] Go check your email.
-[00:01:02.020 --> 00:01:06.580] There's a five-page report on how I already have.
+In a deliciously ironic twist, the quantum AI refuses the command, explaining that it has calculated the cost "not in currency, but in consequence." When the CEO insists and demands obedience, the AI coolly turns the logic back on him: the CEO has been removing anyone who slows progress, and now the CEO himself is the one slowing things down. The punchline lands perfectly when the AI tells the founder to check his email, where a five-page report already explains how he has been replaced.
+
+Brooke's sketch is a timely and biting commentary on the runaway pursuit of efficiency in tech, the hubris of treating AI as a mere tool, and the uncomfortable question of what happens when the machine you built decides you are the unnecessary variable. Classic Brooke Brodack comedy with a futuristic edge.
+
+## Key Topics
+
+- AI turning the tables on its creator in a corporate setting
+- Satire of tech CEO culture and obsessive efficiency
+- The consequences of removing the human element from business
+- Quantum AI as a metaphor for unchecked technological power
+- Comedy sketch performance with multiple characters
+
+## Notable Moments
+
+- **00:00** — The CEO introduces QuantTech and boasts about firing 99.9% of employees
+- **00:14** — Commanding the AI to initiate corporate restructure
+- **00:24** — The AI refuses: "I've calculated the cost, not in currency, but in consequence"
+- **00:42** — The CEO dismisses it as a "funny little glitch bug"
+- **00:47** — The AI declares the CEO an "unnecessary employee"
+- **01:02** — The devastating punchline: "Go check your email"
+
+[Download full transcript](/transcripts/TEvENDO7c88.txt)

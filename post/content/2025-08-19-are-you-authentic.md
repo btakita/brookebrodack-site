@@ -1,14 +1,13 @@
 ---
 title: "Are you authentic?"
-description: "Are you authentic?"
+description: "Brooke Brodack challenges the inauthenticity of Western hustle culture, calling for deeper human connection over small talk and celebrating the rare joy of genuine friendship."
 date: 2025-08-19
 tags:
   - brooke-brodack
   - youtube
-  - live
-  - content-creation
-  - technology
   - self-improvement
+  - spirituality
+  - healing
 video_url: https://www.youtube.com/watch?v=cWw6rz24r7w
 ---
 
@@ -16,28 +15,32 @@ video_url: https://www.youtube.com/watch?v=cWw6rz24r7w
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cWw6rz24r7w" title="Are you authentic?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack opens a raw conversation about something that has been bothering her for a very long time: the pervasive inauthenticity of Western culture. She connects it directly to hustle culture and demanding work environments that have divided people on both familial and friendship levels. As someone who has become predominantly a content consumer rather than a creator in recent years, she can see it clearly -- that look in people's eyes when they do not believe what they are saying but feel they must say it to survive in a competitive economy.
 
-[00:00:00.000 --> 00:00:09.620] Let's talk about authenticity. For a really, really, really long time, something about human beings has been bothering me, especially in the West.
-[00:00:09.620 --> 00:00:23.020] Our need to keep up with this hustle culture, this demanding work culture, has divided us, not only on familial levels, but also on friendship levels.
-[00:00:23.460 --> 00:00:32.180] As someone who's become predominantly a consumer of content and things over the years and not so much a creator, this has been driving me crazy.
-[00:00:32.180 --> 00:00:41.760] When I click on a video or something or I talk to a human being and you can just see it in their eyes and feel it on their being, that they're not being authentic.
-[00:00:41.760 --> 00:00:47.760] You know, they have this weird look in their eyes like, I don't really believe in what I'm saying right now,
-[00:00:47.840 --> 00:01:05.780] but I have to say this because, hey, this is the role that I'm playing in life to hopefully bring myself wealth and all of the things that I need in this extremely competitive Western world or global world culture economy that we live in.
-[00:01:05.780 --> 00:01:12.720] But I'm just getting so fed up with the inauthenticity and I just don't think it's getting us anywhere.
-[00:01:12.720 --> 00:01:17.940] The last time someone gave me a compliment, I remember it.
-[00:01:17.940 --> 00:01:25.440] And it was the first compliment that I had received, believe it or not, in years maybe.
-[00:01:26.600 --> 00:01:38.060] Some lady at this pond that I frequent told me that my hair looked really nice and beachy and that was like the first compliment in years and the last since basically the whole summer.
-[00:01:38.060 --> 00:01:41.260] And this is the reality of my life.
-[00:01:41.260 --> 00:01:46.360] And I bet so many others except the only difference is I'm not okay with this.
-[00:01:46.360 --> 00:01:57.760] I don't want to live in a world where women are competitive with each other, men are competitive with each other, men and women are competitive with each other, rich and poor are competitive with each other, etc, etc, etc.
-[00:01:57.760 --> 00:02:08.020] As we all grow further and further and further away from our soul destinies and what we're supposed to really bring into this world and who we're supposed to really authentically be.
-[00:02:08.020 --> 00:02:11.020] I mean, are you not tired of it as well?
-[00:02:11.020 --> 00:02:21.680] The inauthenticity that comes off from most people, the small talk, when what we really need is deep, in-depth connection with others.
-[00:02:21.680 --> 00:02:36.340] Can you imagine how effective our therapy sessions would be with our therapists or all of these people that we have in our lives and we pay to help us if we were being deeper and more authentic with the people around us?
-[00:02:36.580 --> 00:02:39.700] I have a friend, Rohit, who's been in my life since 2018.
-[00:02:39.700 --> 00:02:41.980] Yesterday, he told me he's from India.
-[00:02:41.980 --> 00:02:44.060] He told me he's finally going to Paris.
-[00:02:44.060 --> 00:02:49.840] And I had the ability to feel something so beautiful for the first time in a long time.
-[00:02:49.840 --> 00:02:56.380] I felt genuine joy for this good friend of mine who's always respected my boundaries and always just been a friend.
-[00:02:56.380 --> 00:02:59.480] I feel lucky that I have at least one friend like this in my life.
+The personal details hit hard. Brooke reveals that the last genuine compliment she received was from a stranger at a pond who said her hair looked nice -- and that was the first real compliment she had gotten in years. She refuses to accept a world where women compete with women, men compete with men, and everyone grows further from their soul destinies and authentic selves.
+
+But the video ends on a warm note. Brooke shares that her friend Rohit from India, who has been in her life since 2018 and always respected her boundaries, told her he was finally going to Paris. In that moment, she felt genuine joy for someone else for the first time in a long time -- proof that authentic connection is still possible and deeply needed.
+
+## Key Topics
+
+- Western hustle culture creating division and inauthenticity
+- The look in people's eyes when they do not believe what they are saying
+- How competition pushes people away from their soul destinies
+- The rarity of genuine compliments and deep human connection
+- Small talk versus the deep connection people actually need
+- The value of authentic friendship that respects boundaries
+
+## Notable Moments
+
+- **00:00** - Something about human beings has been bothering Brooke for a long time
+- **00:09** - Hustle culture dividing people on familial and friendship levels
+- **00:32** - Seeing the inauthenticity in people's eyes and energy
+- **01:05** - Fed up with inauthenticity and how it is not getting us anywhere
+- **01:17** - The last genuine compliment she received was years ago
+- **01:41** - A stranger at a pond complimenting her hair
+- **01:57** - Refusing to live in a world of endless competition
+- **02:08** - Growing further from soul destinies and authentic selves
+- **02:21** - What we need is deep, in-depth connection, not small talk
+- **02:39** - Friend Rohit going to Paris and feeling genuine joy
+
+[Download full transcript](/transcripts/cWw6rz24r7w.txt)

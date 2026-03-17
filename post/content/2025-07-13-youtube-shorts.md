@@ -1,6 +1,6 @@
 ---
 title: "YouTube shorts"
-description: "YouTube shorts"
+description: "Brooke Brodack discusses the power of YouTube Shorts for content creators, explaining how clipping longer videos into shorts can drive new viewership."
 date: 2025-07-13
 tags:
   - brooke-brodack
@@ -13,9 +13,19 @@ video_url: https://www.youtube.com/watch?v=E0gXioboYS4
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E0gXioboYS4" title="YouTube shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Transcript
+Brooke Brodack shares her strategy for leveraging YouTube Shorts to grow her audience. While her longer videos may get around a thousand views, she has discovered the power of extracting clips from those videos and turning them into Shorts that can direct viewers back to the full content.
 
-[00:00:00.000 --> 00:00:02.960] Maybe a thousand views on my actual videos,
-[00:00:02.960 --> 00:00:07.400] but it's still cool that I can take a clip out of those videos
-[00:00:07.400 --> 00:00:10.880] and, you know, make a YouTube short out of it
-[00:00:10.880 --> 00:00:14.840] and then direct people back to that video or just have them see a piece of that
+This practical insight is valuable for any content creator looking to maximize their reach on YouTube. Brooke highlights how Shorts serve as bite-sized entry points that introduce new audiences to a creator's broader catalog of work.
+
+## Key Topics
+
+- Using YouTube Shorts to repurpose longer video content
+- Driving viewership by creating clips from existing videos
+- Shorts as a discovery tool for content creators
+
+## Notable Moments
+
+- [0:00](https://www.youtube.com/watch?v=E0gXioboYS4&t=0) Brooke discusses view counts on her regular videos
+- [0:07](https://www.youtube.com/watch?v=E0gXioboYS4&t=7) Explains the strategy of making Shorts from longer content
+
+[Download full transcript](/transcripts/E0gXioboYS4.txt)
