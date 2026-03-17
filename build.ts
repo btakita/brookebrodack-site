@@ -7,8 +7,9 @@ import { is_entry_file_ } from 'ctx-core/fs'
 import { type Plugin } from 'esbuild'
 import esmfile_ from 'esbuild-plugin-esmfile'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { readdir } from 'node:fs/promises'
-import { dirname, join } from 'node:path'
+import { readdir, readFile } from 'node:fs/promises'
+import { basename, dirname, join } from 'node:path'
+import yaml from 'js-yaml'
 import {
 	type rhonojs__build_config_T,
 	rhonojs__ready__wait,
@@ -30,6 +31,7 @@ export async function build(config?:rhonojs__build_config_T) {
 		asset_base_url: import_meta_env_().ASSET_BASE_URL,
 		base_path: import_meta_env_().ASSET_BASE_PATH,
 	})
+	const md_plugin = md_esbuild_plugin_()
 	const build_promises = [
 		rhonojs_browser__build({
 			...config ?? {},
@@ -53,6 +55,7 @@ export async function build(config?:rhonojs__build_config_T) {
 				rebuild_tailwind_plugin,
 				preprocess_plugin,
 				esmfile,
+				md_plugin,
 			],
 		}),
 	]
@@ -85,6 +88,55 @@ if (is_entry_file_(import.meta.url, process.argv[1])) {
 			console.error(err)
 			process.exit(1)
 		})
+}
+export function md_esbuild_plugin_():Plugin {
+	return {
+		name: 'md',
+		setup(build) {
+			build.onLoad(
+				{ filter: /\.md$/ },
+				async (config)=>{
+					const raw = await readFile(config.path, 'utf8')
+					let body = raw
+					let meta:Record<string, any> = {}
+					if (raw.startsWith('---\n')) {
+						const end = raw.indexOf('\n---\n', 4)
+						if (end >= 0) {
+							meta = (yaml.load(raw.substring(4, end)) as Record<string, any>) ?? {}
+							body = raw.substring(end + 5)
+						}
+					}
+					const fname = basename(config.path, '.md')
+					const slug = meta.slug
+						?? fname.replace(/^\d{4}-\d{2}-\d{2}-/, '')
+					const pub_date = meta.date
+						? (meta.date instanceof Date
+							? meta.date.toISOString()
+							: String(meta.date).includes('T')
+								? String(meta.date)
+								: String(meta.date) + 'T00:00:00Z')
+						: new Date().toISOString()
+					const contents = `
+import { post_meta__validate } from '@rappstack/domain--server--blog/post'
+import { md__raw_ } from '@rappstack/ui--any/md'
+export const meta_ = (ctx)=>post_meta__validate(ctx, ${JSON.stringify({
+						pub_date,
+						title: meta.title ?? slug,
+						slug,
+						description: meta.description ?? '',
+						tags: meta.tags ?? ['other'],
+						...(meta.hero_image && { hero_image: meta.hero_image }),
+						...(meta.og_image && { og_image: meta.og_image }),
+						...(meta.draft !== undefined && { draft: meta.draft }),
+						...(meta.featured !== undefined && { featured: meta.featured }),
+					})})
+export default (ctx)=>md__raw_({ ctx }, ${JSON.stringify(body)})
+`
+					return { contents, loader: 'js' }
+				}
+			)
+		},
+	}
 }
 function preprocess_plugin_():Plugin {
 	return {
