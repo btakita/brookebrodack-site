@@ -199,18 +199,51 @@ describe('functional tests — response content', () => {
 		expect(text).toContain('sitemap.xml')
 	})
 
-	it('GET /sitemap.xml contains "urlset"', async () => {
+	it('GET /sitemap.xml contains valid XML with urlset and url elements', async () => {
 		const res = await fetch(`${BASE_URL}/sitemap.xml`)
 		const xml = await res.text()
-		expect(xml).toContain('urlset')
-	})
-
-	it('GET /sitemap.xml contains route URLs', async () => {
-		const res = await fetch(`${BASE_URL}/sitemap.xml`)
-		const xml = await res.text()
+		expect(xml).toContain('<urlset')
+		expect(xml).toContain('</urlset>')
 		expect(xml).toContain('<url>')
 		expect(xml).toContain('<loc>')
+	})
+
+	it('GET /sitemap.xml URLs start with https://brookebrodack.net', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		const loc_matches = xml.match(/<loc>([^<]*)<\/loc>/g) ?? []
+		expect(loc_matches.length).toBeGreaterThan(0)
+		for (const loc of loc_matches) {
+			const url = loc.replace(/<\/?loc>/g, '')
+			expect(url).toStartWith('https://brookebrodack.net')
+		}
+	})
+
+	it('GET /sitemap.xml contains no "undefined" in any URL', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		expect(xml).not.toContain('undefined')
+	})
+
+	it('GET /sitemap.xml includes post URLs under /content/', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		const loc_matches = xml.match(/<loc>([^<]*)<\/loc>/g) ?? []
+		const content_urls = loc_matches.filter(loc => {
+			const url = loc.replace(/<\/?loc>/g, '')
+			// Match /content/<slug> but not just /content
+			return /\/content\/[^<]+/.test(url)
+		})
+		expect(content_urls.length).toBeGreaterThan(0)
+	})
+
+	it('GET /sitemap.xml includes static page URLs', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		expect(xml).toContain('https://brookebrodack.net')
+		expect(xml).toContain('/brookers')
 		expect(xml).toContain('/content')
+		expect(xml).toContain('/site')
 	})
 
 	it(`GET /content/${TEST_SLUG} contains the post title`, async () => {
