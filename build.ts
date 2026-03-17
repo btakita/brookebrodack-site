@@ -129,6 +129,7 @@ export const meta_ = (ctx)=>post_meta__validate(ctx, ${JSON.stringify({
 						...(meta.og_image && { og_image: meta.og_image }),
 						...(meta.draft !== undefined && { draft: meta.draft }),
 						...(meta.featured !== undefined && { featured: meta.featured }),
+						...(meta.video_url && { video_url: meta.video_url }),
 					})})
 export default (ctx)=>md__raw_({ ctx }, ${JSON.stringify(body)})
 `

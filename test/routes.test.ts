@@ -237,6 +237,19 @@ describe('functional tests — response content', () => {
 		expect(content_urls.length).toBeGreaterThan(0)
 	})
 
+	it('GET /sitemap.xml contains video sitemap entries with video:video and video:thumbnail_loc', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		expect(xml).toContain('xmlns:video=')
+		expect(xml).toContain('video:video')
+		expect(xml).toContain('video:thumbnail_loc')
+		expect(xml).toContain('video:title')
+		expect(xml).toContain('video:description')
+		expect(xml).toContain('video:content_loc')
+		expect(xml).toContain('video:publication_date')
+		expect(xml).toContain('i.ytimg.com/vi/')
+	})
+
 	it('GET /sitemap.xml includes static page URLs', async () => {
 		const res = await fetch(`${BASE_URL}/sitemap.xml`)
 		const xml = await res.text()
