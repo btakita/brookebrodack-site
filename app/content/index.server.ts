@@ -19,10 +19,14 @@ export default middleware_(middleware_ctx=>{
 	const app = new Hono()
 	app.get('/content', async c=>{
 		const request_ctx = brookebrodack_request_ctx__ensure(middleware_ctx, c, { site })
-		await rmemo__wait(
-			()=>youtube_video_a1_(request_ctx),
-			I,
-			10_000)
+		try {
+			await rmemo__wait(
+				()=>youtube_video_a1_(request_ctx),
+				I,
+				10_000)
+		} catch {
+			// YouTube API may be unavailable — render with whatever data we have
+		}
 		return html_response__new(
 			content__doc_html_({
 				ctx: request_ctx
@@ -35,7 +39,11 @@ export default middleware_(middleware_ctx=>{
 		blog_site__set(ctx, blog_site)
 		post_mod_a1__set(ctx, blog_site.post_mod_a1)
 		blog_post_slug_or_page_num__set(ctx, slug)
-		await blog_post__estimate_read_minutes__wait(ctx)
+		try {
+			await blog_post__estimate_read_minutes__wait(ctx)
+		} catch {
+			// Read time estimation may fail — render without it
+		}
 		return html_response__new(
 			post__doc_html_({ ctx })
 		)

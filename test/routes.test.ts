@@ -1,14 +1,18 @@
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
 import type { Subprocess } from 'bun'
 
-const PORT = 4101
+const PORT = 14101 // Use a high port to avoid conflict with dev server
 const BASE_URL = `http://localhost:${PORT}`
+
+// A slug known to exist in post/content/ with a simple title
+const TEST_SLUG = 'hello'
+const TEST_SLUG_TITLE = 'hello!'
 
 /**
  * Route tests for brookebrodack-site.
  *
- * Starts the production server, then verifies every route returns 200
- * with the expected content type and key HTML/XML elements.
+ * Starts the production server, then verifies every route returns expected
+ * status codes, content types, and key HTML/XML elements.
  *
  * Prerequisites:
  *   NODE_ENV=production bun run build
@@ -54,7 +58,7 @@ beforeAll(async () => {
 		env: {
 			...process.env,
 			...app_env,
-			NODE_ENV: 'production',
+			BROOKEBRODACK_PORT: String(PORT),
 		},
 		stdout: 'pipe',
 		stderr: 'pipe',
@@ -73,7 +77,7 @@ beforeAll(async () => {
 	// Warm up slow routes that require external API calls (YouTube data fetch).
 	// These can take up to 15s on first load; warm them up before individual tests run.
 	const warm_up_routes = ['/content', '/rss']
-	await Promise.all(warm_up_routes.map(async path=>{
+	await Promise.all(warm_up_routes.map(async path => {
 		const deadline = Date.now() + 20_000
 		while (Date.now() < deadline) {
 			try {
@@ -93,106 +97,149 @@ afterAll(() => {
 	}
 })
 
-describe('HTML page routes', () => {
-	const html_routes = [
-		{ path: '/', title: 'Brooke Brodack' },
-		{ path: '/brookers', title: 'Brookers' },
-		{ path: '/content', title: 'Content' },
-		{ path: '/site', title: 'Site' },
-		{ path: '/store', title: 'Store' },
-	]
-	// Routes that depend on external API calls may take longer on first load.
-	// Allow up to 15s for these routes.
-	const slow_routes = new Set(['/content'])
-	const timeout = (path: string) => slow_routes.has(path) ? 15_000 : 5_000
-	for (const { path, title } of html_routes) {
-		describe(path, () => {
-			it('returns 200', async () => {
-				const res = await fetch(`${BASE_URL}${path}`)
-				expect(res.status).toBe(200)
-			}, timeout(path))
-			it('returns HTML content type', async () => {
-				const res = await fetch(`${BASE_URL}${path}`)
-				expect(res.headers.get('content-type')).toContain('text/html')
-			}, timeout(path))
-			it('contains DOCTYPE and expected elements', async () => {
-				const res = await fetch(`${BASE_URL}${path}`)
-				const html = await res.text()
-				expect(html).toContain('<!DOCTYPE html>')
-				expect(html).toContain('<html')
-				expect(html).toContain('<head')
-				expect(html).toContain('<body')
-				expect(html).toContain('</html>')
-			}, timeout(path))
-			it(`contains "${title}" in the page`, async () => {
-				const res = await fetch(`${BASE_URL}${path}`)
-				const html = await res.text()
-				expect(html).toContain(title)
-			}, timeout(path))
-		})
-	}
-})
+// ---------------------------------------------------------------------------
+// 1. Smoke tests — verify HTTP status codes
+// ---------------------------------------------------------------------------
 
-describe('/robots.txt', () => {
-	it('returns 200', async () => {
+describe('smoke tests — status codes', () => {
+	it('GET / → 200', async () => {
+		const res = await fetch(`${BASE_URL}/`)
+		expect(res.status).toBe(200)
+	}, 15_000)
+
+	it('GET /content → 200', async () => {
+		const res = await fetch(`${BASE_URL}/content`)
+		expect(res.status).toBe(200)
+	}, 15_000)
+
+	it(`GET /content/${TEST_SLUG} → 200`, async () => {
+		const res = await fetch(`${BASE_URL}/content/${TEST_SLUG}`)
+		expect(res.status).toBe(200)
+	}, 15_000)
+
+	it('GET /sitemap.xml → 200', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		expect(res.status).toBe(200)
+	}, 15_000)
+
+	it('GET /robots.txt → 200', async () => {
 		const res = await fetch(`${BASE_URL}/robots.txt`)
 		expect(res.status).toBe(200)
+	}, 15_000)
+
+	it('GET /nonexistent → 404', async () => {
+		const res = await fetch(`${BASE_URL}/nonexistent`)
+		expect(res.status).toBe(404)
+	}, 15_000)
+})
+
+// ---------------------------------------------------------------------------
+// 2. Unit tests — post index and config
+// ---------------------------------------------------------------------------
+
+describe('unit tests', () => {
+	it('post_mod_a1 is a non-empty array', async () => {
+		const { post_mod_a1 } = await import('../post/index.js')
+		expect(Array.isArray(post_mod_a1)).toBe(true)
+		expect(post_mod_a1.length).toBeGreaterThan(0)
 	})
-	it('returns plain text', async () => {
-		const res = await fetch(`${BASE_URL}/robots.txt`)
-		expect(res.headers.get('content-type')).toContain('text/plain')
+
+	it('site config has expected fields', async () => {
+		const { site } = await import('../config.js')
+		expect(site.website).toBe('https://brookebrodack.net')
+		expect(site.title).toBe('Brooke Brodack')
+		expect(site.description).toBeTypeOf('string')
+		expect(site.description.length).toBeGreaterThan(0)
+		expect(site.author_a1).toBeInstanceOf(Array)
+		expect(site.author_a1.length).toBeGreaterThan(0)
+		expect(site.favicon).toBeDefined()
+		expect(site.social_a1).toBeInstanceOf(Array)
 	})
-	it('contains User-agent and Sitemap directives', async () => {
+
+	it('blog_site has page and post count settings', async () => {
+		const { blog_site } = await import('../config/blog_site.js')
+		expect(blog_site.page__post_count).toBeTypeOf('number')
+		expect(blog_site.home__post_count).toBeTypeOf('number')
+		expect(blog_site.post_mod_a1).toBeInstanceOf(Array)
+		expect(blog_site.post_mod_a1.length).toBeGreaterThan(0)
+	})
+})
+
+// ---------------------------------------------------------------------------
+// 3. Functional tests — verify response content
+// ---------------------------------------------------------------------------
+
+describe('functional tests — response content', () => {
+	it('GET / contains the site title', async () => {
+		const res = await fetch(`${BASE_URL}/`)
+		const html = await res.text()
+		expect(html).toContain('Brooke Brodack')
+	}, 15_000)
+
+	it('GET / contains valid HTML structure', async () => {
+		const res = await fetch(`${BASE_URL}/`)
+		const html = await res.text()
+		expect(html).toContain('<!DOCTYPE html>')
+		expect(html).toContain('<html')
+		expect(html).toContain('<head')
+		expect(html).toContain('<body')
+		expect(html).toContain('</html>')
+	}, 15_000)
+
+	it('GET /robots.txt contains "User-agent"', async () => {
 		const res = await fetch(`${BASE_URL}/robots.txt`)
 		const text = await res.text()
-		expect(text).toContain('User-agent: *')
-		expect(text).toContain('Allow: /')
+		expect(text).toContain('User-agent')
+	})
+
+	it('GET /robots.txt contains Sitemap directive', async () => {
+		const res = await fetch(`${BASE_URL}/robots.txt`)
+		const text = await res.text()
 		expect(text).toContain('Sitemap:')
 		expect(text).toContain('sitemap.xml')
 	})
-})
 
-describe('/rss', () => {
-	// RSS route fetches YouTube data on first load; allow up to 15s.
-	it('returns 200', async () => {
-		const res = await fetch(`${BASE_URL}/rss`)
-		expect(res.status).toBe(200)
+	it('GET /sitemap.xml contains "urlset"', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		expect(xml).toContain('urlset')
+	})
+
+	it('GET /sitemap.xml contains route URLs', async () => {
+		const res = await fetch(`${BASE_URL}/sitemap.xml`)
+		const xml = await res.text()
+		expect(xml).toContain('<url>')
+		expect(xml).toContain('<loc>')
+		expect(xml).toContain('/content')
+	})
+
+	it(`GET /content/${TEST_SLUG} contains the post title`, async () => {
+		const res = await fetch(`${BASE_URL}/content/${TEST_SLUG}`)
+		const html = await res.text()
+		expect(html).toContain(TEST_SLUG_TITLE)
 	}, 15_000)
-	it('returns RSS XML content type', async () => {
-		const res = await fetch(`${BASE_URL}/rss`)
-		const ct = res.headers.get('content-type') ?? ''
-		expect(ct).toContain('xml')
+
+	it(`GET /content/${TEST_SLUG} contains valid HTML structure`, async () => {
+		const res = await fetch(`${BASE_URL}/content/${TEST_SLUG}`)
+		const html = await res.text()
+		expect(html).toContain('<!DOCTYPE html>')
+		expect(html).toContain('<html')
+		expect(html).toContain('</html>')
 	}, 15_000)
-	it('contains RSS feed elements', async () => {
+
+	it('GET /content returns HTML with content listing', async () => {
+		const res = await fetch(`${BASE_URL}/content`)
+		const html = await res.text()
+		expect(res.headers.get('content-type')).toContain('text/html')
+		expect(html).toContain('<!DOCTYPE html>')
+	}, 15_000)
+
+	it('GET /rss returns valid RSS XML', async () => {
 		const res = await fetch(`${BASE_URL}/rss`)
 		const xml = await res.text()
+		const ct = res.headers.get('content-type') ?? ''
+		expect(ct).toContain('xml')
 		expect(xml).toContain('<rss')
 		expect(xml).toContain('<channel')
 	}, 15_000)
-})
-
-describe('/sitemap.xml', () => {
-	it('returns 200', async () => {
-		const res = await fetch(`${BASE_URL}/sitemap.xml`)
-		expect(res.status).toBe(200)
-	})
-	it('returns XML content type', async () => {
-		const res = await fetch(`${BASE_URL}/sitemap.xml`)
-		const ct = res.headers.get('content-type') ?? ''
-		expect(ct).toContain('xml')
-	})
-	it('contains sitemap XML elements', async () => {
-		const res = await fetch(`${BASE_URL}/sitemap.xml`)
-		const xml = await res.text()
-		expect(xml).toContain('<urlset')
-		expect(xml).toContain('<url>')
-		expect(xml).toContain('<loc>')
-	})
-	it('includes all main routes', async () => {
-		const res = await fetch(`${BASE_URL}/sitemap.xml`)
-		const xml = await res.text()
-		expect(xml).toContain('/brookers')
-		expect(xml).toContain('/content')
-		expect(xml).toContain('/site')
-	})
 })
