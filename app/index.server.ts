@@ -14,6 +14,7 @@ import { html_response__new, middleware_, rmemo__wait } from 'rhonojs/server'
 import { blog_site } from '../config/blog_site.js'
 import { site } from '../config.js'
 import { brookebrodack_request_ctx__ensure } from '../ctx/index.js'
+import { llms_txt } from '../llms_txt.js'
 const robots_txt = `
 User-agent: *
 Allow: /
@@ -29,6 +30,10 @@ export default middleware_(middleware_ctx=>{
 	app.get('/robots.txt', ()=>
 		new Response(robots_txt, {
 			headers: { 'Content-Type': 'text/plain' },
+		}))
+	app.get('/llms.txt', ()=>
+		new Response(llms_txt, {
+			headers: { 'Content-Type': 'text/plain; charset=utf-8' },
 		}))
 	app.get('/rss', async c=>{
 		const ctx = brookebrodack_request_ctx__ensure(middleware_ctx, c, { site })

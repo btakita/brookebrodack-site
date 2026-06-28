@@ -17,7 +17,7 @@ static_export_({
 	base_url: process.env.PRERENDER_BASE || 'http://localhost:4101',
 	site_url: site.website,
 	routes: ['/', '/brookers', '/content', '/site', '/store', ...post_routes],
-	extra_routes: ['/robots.txt', '/rss', '/sitemap.xml'],
+	extra_routes: ['/robots.txt', '/rss', '/sitemap.xml', '/llms.txt'],
 }).then(({ exported, errors })=>{
 	if (errors.length > 0) {
 		process.exit(1)
