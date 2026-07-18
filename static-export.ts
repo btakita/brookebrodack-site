@@ -16,7 +16,10 @@ const post_routes = post_slugs.map(slug=>`/content/${slug}`)
 static_export_({
 	base_url: process.env.PRERENDER_BASE || 'http://localhost:4101',
 	site_url: site.website,
-	routes: ['/', '/brookers', '/content', '/site', '/store', ...post_routes],
+	routes: [
+		'/', '/brookers', '/content', '/guestbook', '/guestbook/admin', '/site', '/store',
+		...post_routes
+	],
 	extra_routes: ['/robots.txt', '/rss', '/sitemap.xml', '/llms.txt'],
 }).then(({ exported, errors })=>{
 	if (errors.length > 0) {
