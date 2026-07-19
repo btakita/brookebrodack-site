@@ -60,7 +60,7 @@
 		"esbuild-style-plugin": "^1.6.3",
 		"postcss": "^8.5.8",
 		"rebuildjs": "0.71.1",
-		"schema-dts": "^1.1.5",
+		"schema-dts": "^2.0.0",
 		"tailwindcss": "^4.2.1"
 	},
 	"peerDependencies": {
