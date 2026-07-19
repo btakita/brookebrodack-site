@@ -32,7 +32,9 @@ export async function build(config?:rhonojs__build_config_T) {
 		base_path: import_meta_env_().ASSET_BASE_PATH,
 	})
 	const md_plugin = md_esbuild_plugin_()
-	const build_promises = [
+	// Heterogeneous: the two builds resolve to a BuildContext, the readiness
+	// wait pushed below resolves to void. Only their settlement matters here.
+	const build_promises:Promise<unknown>[] = [
 		rhonojs_browser__build({
 			...config ?? {},
 			publicPath: '/',

@@ -25,7 +25,7 @@ export const brooke_brodack = <author_T>{
 	url: website,
 	image: url__join(website, brooke_brodack_profile_jpg),
 }
-export const site:site_T = {
+export const site = {
 	website: website,
 	author_a1: [brooke_brodack],
 	description: 'YouTubing since 2004',
@@ -88,7 +88,7 @@ export const site:site_T = {
 			active: true
 		},
 	]
-}
+} satisfies site_T
 export function config__init() {
 	const port = parseInt(import_meta_env_().BROOKEBRODACK_PORT) || 4101
 	cwd__set(app_ctx, process.cwd())

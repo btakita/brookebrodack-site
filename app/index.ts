@@ -25,6 +25,11 @@ export default async ()=>{
 					(error.cause as Error).stack
 				]
 				: []))
+		// Hono requires an error handler to return a Response. Returning
+		// nothing leaves the framework without one for the request.
+		return 'getResponse' in error
+			? error.getResponse()
+			: c.text('Internal Server Error', 500)
 	})
 	return app
 }
