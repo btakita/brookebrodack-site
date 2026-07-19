@@ -3,7 +3,7 @@
 		"lib": ["ESNext"],
 		"module": "esnext",
 		"target": "esnext",
-		"moduleResolution": "nodenext",
+		"moduleResolution": "bundler",
 		"moduleDetection": "force",
 		"noEmit": true,
 		"composite": false,
@@ -15,6 +15,12 @@
 		"allowJs": true,
 		"types": [
 			"bun-types", // add Bun global
+			// Asset-module declarations (*.jpg, *.css, ...) plus the DOM lib
+			// reference. Listed here since the pre-Pages stack, but `rebuildjs`
+			// itself was never a dependency of this package — only pinned in the
+			// workspace root's `resolutions`, which does not install anything.
+			// So this entry silently failed to resolve, and TS2688 aborted the
+			// type-check before it read a single file.
 			"rebuildjs/types"
 		]
 	}
