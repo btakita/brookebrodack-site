@@ -65,14 +65,30 @@ beforeAll(async () => {
 	})
 	// Wait for the server to be ready
 	const maxAttempts = 30
+	let ready = false
 	for (let i = 0; i < maxAttempts; i++) {
 		try {
 			const res = await fetch(`${BASE_URL}/robots.txt`)
-			if (res.ok) break
+			if (res.ok) { ready = true; break }
 		} catch {
 			// Server not ready yet
 		}
 		await Bun.sleep(500)
+	}
+	// Fail here rather than letting every test report ConnectionRefused. A
+	// silent give-up turns one cause — usually a missing `bun run build` or an
+	// unmigrated db, per the Prerequisites above — into 20 identical network
+	// errors that say nothing about why. Surface what the server actually said.
+	if (!ready) {
+		const [out, err] = await Promise.all([
+			new Response(server.stdout as ReadableStream).text().catch(()=>''),
+			new Response(server.stderr as ReadableStream).text().catch(()=>''),
+		])
+		server.kill()
+		throw new Error(
+			`server did not come up on ${BASE_URL} within ${maxAttempts * 500}ms.\n`
+			+ 'Prerequisites: `NODE_ENV=production bun run build` and `bun ./db/migrate.ts`.\n'
+			+ `--- start.ts stdout ---\n${out}\n--- start.ts stderr ---\n${err}`)
 	}
 	// Warm up slow routes that require external API calls (YouTube data fetch).
 	// These can take up to 15s on first load; warm them up before individual tests run.
